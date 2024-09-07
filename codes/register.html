@@ -4,36 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donernaya register</title>
+    <title>Donernaya Register</title>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .box {
+            border: 2px solid black; /* Граница квадрата */
+            padding: 20px; /* Внутренние отступы */
+            width: 300px; /* Ширина */
+            height: auto; /* Высота зависит от содержимого */
+            border-radius: 10px; /* Скругленные углы (по желанию) */
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+        }
+    </style>
 </head>
 <body>
-    <form action="" method="get">
-        <p>Email</p>
-        <input type="email" >
-        <p>Password:</p>
-        <input type="password" maxlength="8">
-        
-        <p>Number:</p>
-        <input type="tel" placeholder="not necessary"> <br><br>
-        <textarea cols="30" rows="10"></textarea>
-        <p>Пол:</p>
-        <input type="radio" checked value="male" name="gender"> Male
-        <input type="radio" name="gender"> Female
-        <br>
-  
-        <input type="range">
-        <p>что вы любите больше?</p>
-        <select multiple>
-            <option value="">шаурма</option>
-            <option value="">лаваш</option>
-            <option selected value="">бургер</option>
-            <option value="">меня</option>
+    <div class="center">
+        <div class="box">
+            <p>Email</p>
+            <input type="email">
+            <p>Password:</p>
+            <input type="password" maxlength="8">
             
-        </select>
-        <br><br>
-        <input type="submit" value="Enter">
-        <input type="reset" value="Reset">
-        <br><br>
-        <button type="submit"><a href="index.html">Кіру</a></button>
-        <button type="reset">Reset button</button>
-    </form>
+            <p>Number:</p>
+            <input type="tel" placeholder="not necessary"> <br><br>
+            <p>Пол:</p>
+            <input type="radio" checked value="male" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <br><br>
+            <input type="range">
+            <p>что вы любите больше?</p>
+            <select multiple>
+                <option value="">шаурма</option>
+                <option value="">лаваш</option>
+                <option selected value="">бургер</option>
+                <option value="">меня</option>
+            </select>
+            <br><br>
+            <input type="reset" value="Reset">
+            <button type="submit"><a href="login.html">enter</a></button>
+        </div>
+    </div>
+</body>
+</html>
