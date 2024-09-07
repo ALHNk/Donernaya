@@ -5,10 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discounts</title>
 </head>
+
+<style>
+    table, tr, td {
+        border: 1px solid black;
+    }
+</style>
+
 <body>
-    <div id = "topBar" style = "background-color:darkblue; width: 100%; height: 40px; margin-top: -20px;" >
+    <div id = "topBar" style = "background-color: red; width: 100%; height: 40px; margin-top: -20px;" >
         <header><H1 style = "text-align: center; color: azure;">Discounts in fast-foods</H1></header>
+        <nav style = "text-align:right; margin-right: 10px; margin-top: -50px; "> <a href = "index.html" style="color: white;">Main Page</a></nav>   
     </div>
+
+    <div id = "content" style="margin-top: 3px; margin-left: 10%; margin-right: 8%;">
+        <section>
+            <form>
+            <h1>Discounts</h1>
+            <table>
+                <tr>
+                    <td> <h2 style="margin-left: 100px;">Food</h2></td>
+                    <td><h2 style="margin-left: 180px;">Price</h2></td> 
+                    <td><h2 style="margin-left: 180px;">Restaurant</h2></td>
+                    <td><h2 style="margin-left: 100px;">Choose</h2></td>
+                </tr>
+                <tr>
+                    <td> <img src = "images/kombo-margo_SF.jpg"><p>Pepperoni - 1 Nagets - 1 Limonad</p></td>
+                    <td> <h1 style="margin-left: 180px;"> 4380 ₸</h1></td>
+                    <td> <H1 style="margin-left: 180px;">Shaurma Food</H1> </td>
+                    <td> <input type = "checkbox" id = "SF" style = "margin-left: 100px;"> <label for = "SF">Add to orders</label> </td>
+                </tr>
+                <tr>
+                    <td> <img src = "images/sf2in1.jpg"><p>2 Doners in size 1.5</p></td>
+                    <td> <h1 style="margin-left: 180px;"> 1240 ₸</h1></td>
+                    <td> <H1 style="margin-left: 180px;">Shaurma Food</H1> </td>
+                    <td> <input type = "checkbox" id = "SF2" style = "margin-left: 100px;"> <label for = "SF2">Add to orders</label> </td>
+                </tr>
+                <tr>
+                    <td> <img src = "images/gamburger-sf.jpg"><p>Beef Hamburger</p></td>
+                    <td> <h1 style="margin-left: 180px;"> 790 ₸</h1></td>
+                    <td> <H1 style="margin-left: 180px;">Shaurma Food</H1> </td>
+                    <td> <input type = "checkbox" id = "SF2" style = "margin-left: 100px;"> <label for = "SF2">Add to orders</label> </td>
+                </tr>
+            </table>
+            <br>
+            <label for = "comments" style="margin-left: 500px;"> Comments to the order <input type="text" id = "comments" style="width: 300px; height: 40px;"> 
+                <input type="submit" value="Order" style = "height: 45px; width: 70px;">
+            </form>
+        </section>
+    </div>
+
+    <div id = "bottom" style="margin-bottom: -25px; background-color: red; color: azure;">
+        <footer> 
+                <h3 style="margin-left: 1220px;">Alikhan Khamidulla</h3>
+                <h4 style = "margin-left: 1200px; margin-top: -5px;">Madikozha Issayev Abubakir Meirkhan</h4>
+        </footer>
+     </div> 
     
 </body>
 </html>
