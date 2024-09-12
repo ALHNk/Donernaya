@@ -7,8 +7,7 @@
     <title>Donernaya Register</title>
     <style>
         body{
-            background-image: url(https://img2.akspic.ru/crops/1/2/3/0/5/150321/150321-kosmicheskoe_prostranstvo-purpur-kosmos-fioletovyj-nebo-1920x1080.jpg);
-            background-repeat: no-repeat;
+            background-color: rgb(150, 46, 46);
         }
         .center {
             display: flex;
@@ -32,11 +31,26 @@
     border: 2px solid black;
   }
   p {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
+  input:default {
+  box-shadow: 0 0 1px 1px red;
+}
     </style>
 </head>
 <body>
+    <header style="background-color: red; padding: 20px; display: flex; justify-content: space-between; align-items: center; margin-top: -20px; margin-left: -20px; margin-right: -20px;">
+        <nav>
+            <ul class="menu" style="list-style: none; display: flex;">
+                <li style="margin-right: 20px; font-size: 25px;"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
+                <li style="margin-right: 20px; font-size: 25px;"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
+                <li style="margin-right: 20px; font-size: 25px;"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
+                <li style="margin-right: 20px;font-size: 25px;"><a href="orders.html" style="color: white; text-decoration: none;">Discounts</a></li>
+                <li style="margin-right: 20px; font-size: 25px;"><a  href="login.html" style="color: white; text-decoration: none;">Login</a></li>
+                
+            </ul>
+        </nav>
+    </header>
     <div class="center">
         <div class="box">
             <p>Email</p>
@@ -47,13 +61,14 @@
             <p>Number:</p>
             <input type="tel" placeholder="not necessary"> <br><br>
             <p>Пол:</p>
-            <input type="radio" checked value="male" name="gender"> Male
+            <input type="radio" checked value="male" name="gender" checked> Male
             <input type="radio" name="gender"> Female
             <br><br>
+            <p>сумма банковского счета </p>
             <input type="range">
             <p>что вы любите больше?</p>
             <select multiple>
-                <option value="">шаурма</option>
+                <option aria-checked="true">шаурма</option>
                 <option value="">лаваш</option>
                 <option selected value="">бургер</option>
                 <option value="">меня</option>
@@ -63,7 +78,7 @@
             <button type="submit"><a href="login.html">enter</a></button>
         </div>
     </div>
-    <div class="city" style="display: flex;justify-content: right;"> 
+    <div class="city" style="background-color: red; color: white; padding: 20px; text-align: center; margin-bottom: -10px; margin-left: -20px; margin-right: -20px;"> 
         <p>Merikhan ABubakir</p>
         <br>
         <h5>Alikhan Khamidulla, Madikozha Issayev</h5>

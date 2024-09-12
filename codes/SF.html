@@ -4,18 +4,17 @@
      <link rel="stylesheet" href="stylesd.css">
 </head>
 <style>
-    body {
-    background-image: url(images/36928f6f0f5c7bf3ec4292adfa74722516f0a6be_XiLEm3SM.gif);
+  body{
+    background-color: rgb(216, 115, 115);
+  }
+   frgrrgrgrg {
+    background-image: url(images/36928f6f0f5c7bf3ec4292adfa74722516f0a6be_XiLEm3SM.gif) ;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
     margin: 0;
     height: 100vh;
   }
- 
-  .city {
-    background-color: red;
-    color: white;
-    border: 2px solid black;
-  }
-  
   p {
     color: rgb(0, 0, 0);
     text-align: center;
@@ -31,18 +30,58 @@
             height: 100vh; 
             flex-direction: column;
         }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
 </style>
 <body>
-<div class="city" style="display: flex;justify-content: center;">
- 
-  <img class="logoImg" alt="doneravatar" src="images/donerava.png" height="60px">
-  <h3 style="text-align: center;">SF</h3>
+  <header style="background-color: red; padding: 20px; display: flex; justify-content: space-between; align-items: center; margin-top: -20px; margin-left: -20px; margin-right: -20px;">
+    <!-- Logo Section -->
+    <div class="logo" style="display: flex; align-items: center;">
+        <a href="https://youtu.be/obmlZH3X9gs?si=uBa-980hhFLN6_xM">
+            <img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px">
+        </a>
+        <h1 style="color: white; margin-left: 20px;">SF</h1>
+    </div>
 
-</div>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="menu" style="list-style: none; display: flex;">
+            <li style="margin-right: 20px; font-size: 25px;"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
+            <li style="margin-right: 20px; font-size: 25px;"><a ><img  alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
+            <li style="margin-right: 20px; font-size: 25px;"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
+            <li style="margin-right: 20px;font-size: 25px;"><a href="orders.html" style="color: white; text-decoration: none;">Discounts</a></li>
+            <li style="margin-right: 20px; font-size: 25px;"><a href="login.html" style="color: white; text-decoration:none;">Login</a></li>
+        </ul>
+    </nav>
+</header>
 
 <div style="display: flex;justify-content: left;" >
     <div style="text-align: left; max-width: 40%;">
-        <ul style="color: white;">
+        <ul style="color: rgb(0, 0, 0);">
           <b>Shawarma in Astana: Convenient and Delicious!
             <li>In our menu, you will find not only tasty and juicy shawarma for every taste, but also combo sets, burgers, sushi, and rolls — all in one place.</li>
             <li>We offer a wide range of dishes that will satisfy your taste preferences and allow you to enjoy a variety of cuisines.</li>
@@ -51,8 +90,9 @@
 </div>
 
     <img class="image" src="https://halaldamu.kz/storage/app/uploads/public/606/9b5/eb4/6069b5eb4b491605750855.png"  alt="Shaurma food">
-    <b style="text-align: left ; max-width: 40%;justify-content: space-between; color: white;">7 причин заказать шаурму на shaurma-food.kz
-        <ul style="color: white;">
+    <b style="text-align: left ; max-width: 40%;justify-content: space-between; color: rgb(0, 0, 0);">
+        <ul style="color: rgb(0, 0, 0);">
+          <il>7 причин заказать шаурму на shaurma-food.kz</il>
           <li>Shaurma Food is the largest restaurant in all of Kazakhstan, offering all your favorite dishes. We can offer the following advantages:</li>
           <li>Shaurma Food is the largest restaurant in all of Kazakhstan, offering all your favorite dishes. We can offer the following advantages:</li>
           <li>A wide selection of dishes for every taste: shawarma, pizza, burgers, sushi, and rolls;</li>
@@ -65,19 +105,20 @@
           
 </ul>
 </div>
-<div style="display: flex;justify-content: left;" > 
-  <img src="images/донер.png" width="500" height="500" alt="menu">
-    <form style="margin-top: 280px;">
-       <p style="margin-left: 30px;">comment</p>
-<textarea cols="30" rows="10" style="margin-left: 50px;"></textarea>
-<input type="reset" value="submit">
-
+<div style="display: flex;justify-content: center;" > 
+  <img src="images/донер.png" width="800" height="600" alt="menu">
+</div>
+<form style="margin-top: 280px; text-align: center;">
+  <p>comment</p>
+  <textarea cols="30" rows="10" style="display: block; margin: 0 auto;"></textarea>
+  <input type="reset" value="submit" style="display: block; margin: 20px auto;">
 </form>
-</div>
-<div class="city" style="display: flex;justify-content: right;"> 
-<p><a href="index.html"> Merikhan ABubakir</a></p>
-<br>
-<h5>Alikhan Khamidulla, Madikozha Issayev</h5>
-</div>
-</body>
+
+
+<div  style="background-color: red; color: white; padding: 20px; text-align: center; margin-bottom: -10px; margin-left: -20px; margin-right: -20px;"> 
+  <p><a href="index.html"> Merikhan ABubakir</a></p>
+    <br>
+    <h5>Alikhan Khamidulla, Madikozha Issayev</h5>
+  </div>
+  </body>
 </html>
