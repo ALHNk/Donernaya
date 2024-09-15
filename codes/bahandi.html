@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bahandi</title>
+    <link rel = "stylesheet" href = "fails.css">
 </head>
-<body style="background-color: rgba(188, 241, 208, 0.345);">
-    <div id = "topBar" style = "background-color:red; width: 100%; height: 115px; margin-top: -20px;" >
-            <br><header><H1 style = "text-align: center; color: azure;">Bahandi Burgers</H1></header>
-            <nav style = "text-align:left; margin-left: 10px; margin-top: -85px; "> <a href = "index.html" style="color: white;"><img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px" ></a></nav>            
+<body class = "bodyBack">
+    <div id = "topBar" class = "headers" >
+        <a href = "index.html" ><img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px" ></a>
+        <!-- <nav style = "text-align:left; margin-left: 10px; margin-top: -85px; "> </nav>  -->
+        <br><header><H1>Bahandi Burgers</H1></header>
+            <nav>
+            <ul class="menu" style="list-style: none; display: flex;">
+                <li class = "navButtons"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
+                <li class = "navButtons"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
+                <li class = "navButtons"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
+                <li class = "navButtons"><a href="orders.html" class = "navButtons"><u>Discounts</u></a></li>
+                <li class = "navButtons"><a href="login.html" class = "navButtons"><u>Login</u></a></li>
+            </ul>
+        </nav>           
     </div>
-    <div id = "imageContainer" style="margin-left: 35%; margin-right: 45%;">
-            <img src="images/bahandi_burgers.jpg" style="margin-top: 3px;" alt = "bahandi_burgers in Mega silkway" height="524" width="512"> 
+    <div>
+    <div id = "imageContainer" style="margin-left: 35%; margin-right: 31%;">
+            <img src="images/bahandi_burgers.jpg" style="margin-top: 5px; margin-bottom: 10px;" alt = "bahandi_burgers in Mega silkway" height="524" width="512"> 
      </div>   
 
      <div id = "Content" style="margin-top: 3px; margin-left: 15%; margin-right: 15%;">
@@ -57,9 +69,13 @@
             </ul>
         </section>
      </div>
+</div>
+<div class = "mapContainer">
+    <iframe class = "map" src="https://maps.google.com/maps?width=100%25&amp;height=100%&amp;hl=en&amp;q=bahandi%20burgers%20astana+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-     <div id = "bottom" style="margin-bottom: -25px; background-color: red; color: azure;">
-        <footer> 
+</div >
+     <div id = "bottom" class = "footers">
+        <footer > 
                 <h3 style="margin-left: 1220px;">Alikhan Khamidulla</h3>
                 <h4 style = "margin-left: 1200px; margin-top: -5px;">Madikozha Issayev Abubakir Meirkhan</h4>
         </footer>

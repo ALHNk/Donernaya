@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.about-us {
+    background-image: url(images/grey-back.png);
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    height: 660px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+    margin-left: -30px;
+    text-shadow: 1px 1px 2px black;  
+    background-color: black;
+    font-size: 27px;
+    text-align: center;
+}
+
+.image-container {
+    margin-top: -20px;
+    margin-bottom: -25px;
+    margin-right: -40px;
+}
+.footers{
+    background-color: red; 
+    color: white;
+     padding: 20px; 
+     text-align: center; 
+     margin-bottom: -10px; 
+     margin-left: -20px; 
+     margin-right: -20px;
+}
+
+.headers{
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    color:white;
+    
+}
+
+.navButtons{
+    margin-right: 20px;
+    font-size: 25px;
+    color: white;
+}
+.navButtons:hover{
+    margin-top:10px;
+    background-color:yellow;
+    color: black;
+}
+
+.bodyBack{
+    background-color: RGB(224, 255, 255);
+}
+#imageContainer{
+
+}
+#imageContainer:hover{
+    background-color: bisque;
+    margin-top: 10px;
+}
+
+.review_Heading_Texts{
+    /* font: ; */
+}
+.mapContainer{
+    margin-top: 20px;
+    margin-left: 35%;
+}
+.map{
+ 
+}
