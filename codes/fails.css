@@ -4,6 +4,7 @@
     padding: 20px;
 }
 
+
 .about-us {
     background-image: url(images/grey-back.png);
     background-size: cover;
@@ -69,12 +70,21 @@
     margin-top: 10px;
 }
 
-.review_Heading_Texts{
-    /* font: ; */
+.metalFont{   
+    font-family: 'Metal Mania';
+    font-size: 40px;
+}
+p{
+    font-family: Comic Sans Ms;
+}
+.comicFont{
+    font-family: Comic Sans Ms;
 }
 .mapContainer{
     margin-top: 20px;
     margin-left: 15%;
+    margin-right: 18%;
+    border: 3px solid black;
 }
 .map:hover{
     box-shadow: 10px 10px 5px 2px lightblue;
@@ -88,12 +98,25 @@
 .logoImg:hover{
     margin-top: 10px;
 }
-.rightContent{
+#rightContent{
     float:right;
     margin-right: 0%;
     display: block;
     height: 1000px;
 }
-#rightScr{
- 
+
+table, tr, td {
+    border: 1px solid black;
 }
+
+input[type=submit]{
+    height: 45px;
+     width: 70px;
+}
+input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
