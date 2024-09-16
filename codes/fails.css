@@ -61,17 +61,11 @@
 .bodyBack{
     background-color: RGB(224, 255, 255);
 }
-#imageContainer{
-
-}
 #imageContainer:hover{
     background-color: bisque;
     margin-top: 10px;
 }
 
-.review_Heading_Texts{
-    /* font: ; */
-}
 .mapContainer{
     margin-top: 20px;
     margin-left: 15%;
@@ -94,6 +88,27 @@
     display: block;
     height: 1000px;
 }
-#rightScr{
- 
+.box {
+    border: 2px solid black; 
+    padding: 20px; 
+    width: 300px;
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); 
 }
+.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    flex-direction: column;
+}
+.city {
+    background-color: rgb(192, 9, 9);
+    color: white;
+    border: 2px solid black;
+  }

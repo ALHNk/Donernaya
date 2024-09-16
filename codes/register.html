@@ -5,31 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donernaya Register</title>
-    <style>
-        body{
-            background-color: rgb(150, 46, 46);
-        }
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-
-        .box {
-            border: 2px solid black; 
-            padding: 20px; 
-            width: 300px;
-            height: auto; 
-            border-radius: 10px; 
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); 
-        }
-        .city {
-    background-color: rgb(192, 9, 9);
-    color: white;
-    border: 2px solid black;
-  }
+    <link rel="stylesheet" href="fails.css">
+    <style>    
   p {
     color: rgb(0, 0, 0);
   }
@@ -38,18 +15,19 @@
 }
     </style>
 </head>
-<body>
+<body class="bodyBack">
     <header style="background-color: red; padding: 20px; display: flex; justify-content: space-between; align-items: center; margin-top: -20px; margin-left: -20px; margin-right: -20px;">
         <nav>
+            <div id = "topBar" class = "headers" >
+                <a href = "index.html" ><img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px" ></a>
             <ul class="menu" style="list-style: none; display: flex;">
-                <li style="margin-right: 20px; font-size: 25px;"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
-                <li style="margin-right: 20px; font-size: 25px;"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
-                <li style="margin-right: 20px; font-size: 25px;"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
-                <li style="margin-right: 20px;font-size: 25px;"><a href="orders.html" style="color: white; text-decoration: none;">Discounts</a></li>
-                <li style="margin-right: 20px; font-size: 25px;"><a  href="login.html" style="color: white; text-decoration: none;">Login</a></li>
-                
+                <li class = "navButtons"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
+                <li class = "navButtons"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px" ></a></li>
+                <li class = "navButtons"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px" ></a></li>
+                <li class = "navButtons"><a href="orders.html" >Discounts</a></li>
+                <li class = "navButtons"><a href="login.html" >Login</a></li>
             </ul>
-        </nav>
+        </nav>                    
     </header>
     <div class="center">
         <div class="box">
@@ -75,7 +53,7 @@
             </select>
             <br><br>
             <input type="reset" value="Reset">
-            <button type="submit"><a href="login.html">enter</a></button>
+            <button type="submit"><a href="login.html" style="text-decoration: none;">enter</a></button>
         </div>
     </div>
     <div class="city" style="background-color: red; color: white; padding: 20px; text-align: center; margin-bottom: -10px; margin-left: -20px; margin-right: -20px;"> 
