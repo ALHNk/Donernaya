@@ -56,12 +56,12 @@
 }
 .navButtons:hover{
     margin-top:10px;
-    background-color:yellow;
-    color: black;
+    background-color:black;
+    color: white;
 }
 
 .bodyBack{
-    background-color: RGB(224, 255, 255);
+    background-color: bisque;
 }
 #imageContainer{
 
@@ -106,6 +106,33 @@ p{
     height: 1000px;
 }
 
+
+.index_info{
+    background-image: url(images/grey-back.png); 
+    background-size: cover;
+    color: white;  /* Light text to contrast the background */
+    padding: 20px;
+    height: 660px; 
+    margin-bottom: -20px; 
+    margin-top: -20px; 
+    margin-left: -30px;
+    text-shadow: black;
+    background-color: black;
+    font-size: 27px;
+    text-align: center;
+}
+
+.image{
+
+}
+
+.image:hover{
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: 10px 10px 50px 2px;
+}
+=======
+
 table, tr, td {
     border: 1px solid black;
 }
@@ -121,3 +148,4 @@ input[type=text] {
     box-sizing: border-box;
   }
   
+
