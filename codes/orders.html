@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discounts</title>
     <link rel = "stylesheet" href="fails.css">
+    <link href='https://fonts.googleapis.com/css?family=Metal Mania' rel='stylesheet'>
 </head>
 
 <style>
@@ -19,25 +20,25 @@
         <a href = "index.html" ><img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px" ></a>
         <header><H1>Discounts</H1></header>        
         <nav>
-            <ul class="menu" style="list-style: none; display: flex;">
+            <ul class="menu" style="list-style: none; display: flex; text-decoration: none;">
                 <li class = "navButtons"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
                 <li class = "navButtons"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
                 <li class = "navButtons"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
-                <li class = "navButtons"><a href="orders.html" class = "navButtons"><u>Discounts</u></a></li>
-                <li class = "navButtons"><a href="login.html" class = "navButtons"><u>Login</u></a></li>
+                <li class = "navButtons"><a href="orders.html" class = "navButtons" >Discounts</a></li>
+                <li class = "navButtons"><a href="login.html" class = "navButtons">Login</a></li>
             </ul>
         </nav>               
     </div>
 
     <div id = "content" style="margin-top: 3px; margin-left: 10%; margin-right: 0%;">
-        <div class="rightContent">
+        <div id="rightContent">
             <marquee direction = "down" scrollamount = 10  height = 100%>
                 <img src = "images/Vector_BURGER.png" id = "rightScr"></marquee>
         </div>
     
         <section>
             <form>
-            <h1>Discounts</h1>
+            <h1 class = "metalFont" style = "font-size: 100px;">Discounts</h1>
             
             <table>            
                 <tr>
@@ -66,8 +67,8 @@
                 </tr>
             </table>
             <br>
-            <label for = "comments" style="margin-left: 500px;"> Comments to the order <input type="text" id = "comments" style="width: 300px; height: 40px;"> 
-                <input type="submit" value="Order" style = "height: 45px; width: 70px;">
+            <label for = "comments" class="comicFont" style="margin-left: 500px;"> Comments to the order    <input type="text" id = "comments" style="margin-left: 10px;"> 
+                <input type="submit" value="Order">
             </form>
         </section>
     </div>
