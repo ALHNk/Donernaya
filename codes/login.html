@@ -6,42 +6,17 @@
     <title>login</title>
     <link rel="stylesheet" href="fails.css">
 </head>
-<style>
-    body{
-   background-image: url(images/madik.png);
-   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-    margin: 0;
-    height: 100vh;
-    }
 
-    .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; 
-            flex-direction: column;
-        }
-        .city {
-    background-color: rgb(192, 9, 9);
-    color: white;
-    border: 2px solid black;
-  }
-  .box {
-            border: 2px solid black; 
-            padding: 20px; 
-            width: 300px;
-            height: auto; 
-            border-radius: 10px; 
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); 
-        }
-        .active {
-  background-color: #04AA6D;
-  color: white;
-}
-</style>
-<body>
+<body 
+   style="background-image: url('images/madik.png'); 
+          background-repeat: no-repeat; 
+          background-attachment: fixed; 
+          background-size: cover; 
+          margin: 0; 
+          height: 100vh;">
+
+    
+
   
    
     <header style="background-color: red; padding: 20px; display: flex; justify-content: space-between; align-items: center; margin-top: -20px; margin-left: -20px; margin-right: -20px;">
@@ -52,22 +27,19 @@
             </a>
             <h1 style="color: white; margin-left: 20px;">LOGIN</h1>
         </div>
-        <nav>
-            <ul class="menu" style="list-style: none; display: flex;">
-                <li style="margin-right: 20px; font-size: 25px;"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
-                <li style="margin-right: 20px; font-size: 25px;"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
-                <li style="margin-right: 20px; font-size: 25px;"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
-                <li style="margin-right: 20px;font-size: 25px;"><a href="orders.html" style="color: white; text-decoration: none;">Discounts</a></li>
-                <li style="margin-right: 20px; font-size: 25px;"><a  class="active" style="color: white; text-decoration: none;">Login</a></li>
-                
-            </ul>
-        </nav>
+        <ul class="menu" style="list-style: none; display: flex;">
+            <li class = "navButtons"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
+            <li class = "navButtons"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px" ></a></li>
+            <li class = "navButtons"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px" ></a></li>
+            <li class = "navButtons"><a href="orders.html" class = "navButtons" >Discounts</a></li>
+            <li class = "navButtons"><a class = "active" >Login</a></li>
     </header>
     
         
     <div class="center">
-        <div class="box" >
-    <p>login</p>
+        <div class="box" style="background-color: white; opacity: 85%; height: 35%;" >
+            <form >
+    <p style="color: rgb(55, 43, 43);" >login</p>
     <input type="email" placeholder="example@mail.ru">   
     <p>password</p>
     <input type="password" placeholder="password">
@@ -81,7 +53,7 @@
     <button type="submit">
         <a href="register.html" style="color: blue; text-decoration: none;">register</a>
     </button>
-    
+    </form>
 </div>
  </div>
 
