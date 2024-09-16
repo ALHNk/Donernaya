@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discounts</title>
+    <link rel = "stylesheet" href="fails.css">
 </head>
 
 <style>
@@ -12,21 +13,33 @@
     }
 </style>
 
-<body>
-    <div id = "topBar" style = "background-color:red; width: 115%; height: 115px; margin-top: -20px;" >
-        <br><header><H1 style = "text-align: center; color: azure;">Discounts</H1></header>
-        <nav style = "text-align:left; margin-left: 10px; margin-top: -85px; "> <a href = "index.html" style="color: white;"><img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px" ></a></nav>            
+<body class = "bodyBack">
+    <div id = "topBar" class = "headers">
+       
+        <a href = "index.html" ><img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px" ></a>
+        <header><H1>Discounts</H1></header>        
+        <nav>
+            <ul class="menu" style="list-style: none; display: flex;">
+                <li class = "navButtons"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
+                <li class = "navButtons"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
+                <li class = "navButtons"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
+                <li class = "navButtons"><a href="orders.html" class = "navButtons"><u>Discounts</u></a></li>
+                <li class = "navButtons"><a href="login.html" class = "navButtons"><u>Login</u></a></li>
+            </ul>
+        </nav>               
     </div>
 
-    <div id = "content" style="margin-top: 3px; margin-left: 10%; margin-right: 8%;">
+    <div id = "content" style="margin-top: 3px; margin-left: 10%; margin-right: 0%;">
+        <div class="rightContent">
+            <marquee direction = "down" scrollamount = 10  height = 100%>
+                <img src = "images/Vector_BURGER.png" id = "rightScr"></marquee>
+        </div>
+    
         <section>
             <form>
             <h1>Discounts</h1>
-            <br>
-            <b>Text</b>
-            <u>Text</u>
-            <table>
             
+            <table>            
                 <tr>
                     <td> <h2 style="margin-left: 100px;">Food</h2></td>
                     <td><h2 style="margin-left: 180px;">Price</h2></td> 
@@ -59,6 +72,7 @@
         </section>
     </div>
 
+    
     <div id = "bottom" style="margin-bottom: -25px; background-color: red; color: azure;">
         <footer> 
                 <h3 style="margin-left: 1220px;">Alikhan Khamidulla</h3>

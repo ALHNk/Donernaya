@@ -74,8 +74,26 @@
 }
 .mapContainer{
     margin-top: 20px;
-    margin-left: 35%;
+    margin-left: 15%;
 }
-.map{
+.map:hover{
+    box-shadow: 10px 10px 5px 2px lightblue;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.map{    
+    height: 900px;
+    width: 1000px;
+}
+.logoImg:hover{
+    margin-top: 10px;
+}
+.rightContent{
+    float:right;
+    margin-right: 0%;
+    display: block;
+    height: 1000px;
+}
+#rightScr{
  
 }
