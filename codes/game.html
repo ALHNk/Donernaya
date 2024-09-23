@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-.flex-container {
-  display: flex;
-  background-color: DodgerBlue;
-  color: red; /* This will change the text color to red */
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
-p{
-    color: red;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Carousel</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/
+  bootstrap@5.3.3/dist/css/bootstrap.min.css"  integrity="sha384-
+  QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5p
+  NlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="
+  anonymous">
+    <link rel="stylesheet" href="anything.css">
 </head>
 <body>
+    <div class="carousel">
+        <!-- Radio buttons for each slide -->
+        <input type="radio" name="slides" id="slide1" checked>
+        <input type="radio" name="slides" id="slide2">
+        <input type="radio" name="slides" id="slide3">
 
-<h1>Create a Flex Container</h1>
+        <!-- Slides -->
+        <div class="slides">
+            <div class="slide" id="s1">
+                <img src="images/madik.png" alt="Slide 1">
+            </div>
+            <div class="slide" id="s2">
+                <img src="images/donerava.png" alt="Slide 2">
+            </div>
+            <div class="slide" id="s3">
+                <img src="images/menu.jpg" alt="Slide 3">
+            </div>
+        </div>
 
-<div class="flex-container">
-  <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><p>1</p></a> </div>
-  <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">2</a> </div>
-  <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">3</a> </div>
-  <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">4</a> </div>
-  <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">5</a> </div>
-  <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">6</a> </div>
-  <div><a href="https://naebloxov.ru/">7</a> </div>
-  <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">8</a> </div>
-  <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">9</a> </div> 
-</div>
-
-<p>one of them give you discount</p>
-<p>other gives us your IP</p>
-
+        <!-- Labels for navigation -->
+        <div class="navigation">
+            <label for="slide1" class="nav-button"></label>
+            <label for="slide2" class="nav-button"></label>
+            <label for="slide3" class="nav-button"></label>
+        </div>
+    </div>
 </body>
 </html>

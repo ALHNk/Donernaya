@@ -171,7 +171,9 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+}
+.carousel-inner img {
+    max-height: 300px; /* Set a maximum height for the images */
+    width: auto; /* Maintain the aspect ratio by automatically adjusting the width */
+    object-fit: cover; /* Ensure the image covers the container proportionally */
   }
-  
-
-
