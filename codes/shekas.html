@@ -11,24 +11,48 @@
 
 </head>
 <body class = "bodyBack">
-    <header class="headers"> 
-        <div class="logo" style = "background-color: red; height: 100px;">
-            <a href="index.html"><img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px" ></a>
-            <H1 style = "text-align: left;margin-left: 100px; margin-top: -70px; color: white;">Zheka's doner review</H1>
+    <div id = "topBar" class="headers">
+        <div class = "offcanvas offcanvas-end bg-danger" id = "menu">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title text-white">Main Menu</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class = "navbar navbar-inverse ">
+                    <ul class="menu" style="list-style: none; display:flex;">
+                        <li class = "navButtons"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
+                        <li class = "navButtons"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
+                        <li class = "navButtons"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
+                        <li class = "navButtons"><a href="orders.html" class = "navButtons">Discounts</a></li>
+                        
+                    </ul>
+                </div>
+              </div>
         </div>
-        <!-- Navigation Menu -->
-        <nav>
-            <ul class="menu" style="list-style: none; display: flex;">
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class =  "col sm-2">
+                <a href = "index.html" class="navbar-brand"><img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px" ><p>Main Page</p></a>
+            </div>
+            <div class="col sm-4 pt-5">
+            <header ><H1 >Zheka's Doner</H1></header>
+            </div>
+            <div class = "col sm-4 pt-5">
+                <button class="btn btn-primary float-end btn-lg" style = "height: 60px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                    Menu
+                </button>
+                <a href="login.html" class = "float-end me-5">
+                <button class = "btn btn-primary btn-sm">                
+                    <img src="images/Login_icon.png">
+                </button>
+                </a>
                 
-                <li class = "navButtons"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
-                <li class = "navButtons"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
-                <li class = "navButtons"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
-                <li class = "navButtons"><a href="orders.html" class = "navButtons" ">Discounts</a></li>
-                <li class = "navButtons"><a href="login.html" class = "navButtons" ">Login</a></li>
-            </ul>
-        </nav>      
-    </header>
-    <>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+    
     <div id="carouselExampleIndicators" class="carousel slide  " data-bs-ride="carousel" >
         <ol class="carousel-indicators">
           <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
