@@ -56,8 +56,11 @@
 }
 .navButtons:hover{
     margin-top:10px;
-    background-color:black;
-    color: white;
+    background-color:white;
+    color: black;
+}
+button:hover{
+    margin-top: 5px;
 }
 
 .bodyBack{
@@ -137,7 +140,7 @@ p{
     background-size: cover;
     color: white;  /* Light text to contrast the background */
     padding: 20px;
-    height: 660px; 
+    height: 700px; 
     margin-bottom: -20px; 
     margin-top: -20px; 
     margin-left: -30px;
@@ -156,7 +159,7 @@ p{
 
 
 table, tr, td {
-    border: 1px solid black;
+    border: 10px solid green;
 }
 
 input[type=submit]{

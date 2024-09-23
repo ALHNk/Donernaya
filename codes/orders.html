@@ -6,64 +6,87 @@
     <title>Discounts</title>
     <link rel = "stylesheet" href="fails.css">
     <link href='https://fonts.googleapis.com/css?family=Metal Mania' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
-<style>
-    table, tr, td {
-        border: 1px solid black;
-    }
-</style>
+
 
 <body class = "bodyBack">
-    <div id = "topBar" class = "headers">
-       
-        <a href = "index.html" ><img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px" ></a>
-        <header><H1>Discounts</H1></header>        
-        <nav>
-            <ul class="menu" style="list-style: none; display: flex; text-decoration: none;">
-                <li class = "navButtons"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
-                <li class = "navButtons"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
-                <li class = "navButtons"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
-                <li class = "navButtons"><a href="orders.html" class = "navButtons" >Discounts</a></li>
-                <li class = "navButtons"><a href="login.html" class = "navButtons">Login</a></li>
-            </ul>
-        </nav>               
+    <div id = "topBar" class="headers">
+        <div class = "offcanvas offcanvas-end bg-danger" id = "menu">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title text-white">Main Menu</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class = "navbar navbar-inverse ">
+                    <ul class="menu" style="list-style: none; display:flex;">
+                        <li class = "navButtons"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
+                        <li class = "navButtons"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
+                        <li class = "navButtons"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
+                        <li class = "navButtons"><a href="orders.html" class = "navButtons">Discounts</a></li>
+                        
+                    </ul>
+                </div>
+              </div>
+        </div>
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class =  "col sm-2">
+                <a href = "index.html" class="navbar-brand"><img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px" ><p>Main Page</p></a>
+            </div>
+            <div class="col sm-4 pt-5">
+            <header ><H1 >Discounts</H1></header>
+            </div>
+            <div class = "col sm-4 pt-5">
+                <button class="btn btn-primary float-end" style = "height: 60px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                    Menu
+                </button>
+                <a href="login.html" class = "float-end me-5">
+                <button class = "btn btn-primary btn-sm">                
+                    <img src="images/Login_icon.png">
+                </button>
+                </a>
+                
+            </div>
+        </div>
+    </div>
     </div>
 
-    <div id = "content" style="margin-top: 3px; margin-left: 10%; margin-right: 0%;">
-        <div id="rightContent">
-            <marquee direction = "down" scrollamount = 10  height = 100%>
-                <img src = "images/Vector_BURGER.png" id = "rightScr"></marquee>
-        </div>
-    
+        
+    <div class = "row">
+        
+        <div class = "col sm-12 ms-5 float-start">
         <section>
             <form>
             <h1 class = "metalFont" style = "font-size: 100px;">Discounts</h1>
             
-            <table>            
-                <tr>
+            <table class = "table table-bordered table-warning table-hover">            
+                <thead class = "table table-success">
                     <td> <h2 style="margin-left: 100px;">Food</h2></td>
                     <td><h2 style="margin-left: 180px;">Price</h2></td> 
                     <td><h2 style="margin-left: 180px;">Restaurant</h2></td>
                     <td><h2 style="margin-left: 100px;">Choose</h2></td>
-                </tr>
+                </thead>
                 <tr>
-                    <td> <img src = "images/kombo-margo_SF.jpg" alt = "Kombo in SF"><p>Pepperoni - 1 Nagets - 1 Limonad</p></td>
-                    <td> <h1 style="margin-left: 180px;"> 4380 ₸</h1></td>
+                    <td> <img src = "images/kombo-margo_SF.jpg" class = "rounded-circle" alt = "Kombo in SF"><p>Pepperoni - 1 Nagets - 1 Limonad</p></td>
+                    <td> <h1 style="margin-left: 180px;"> 3680 ₸</h1></td>
                     <td> <H1 style="margin-left: 180px;">Shaurma Food</H1> </td>
-                    <td> <input type = "checkbox" id = "SF" style = "margin-left: 100px;"> <label for = "SF">Add to orders</label> </td>
+                    <td> <input class="form-check-input" type = "checkbox" id = "SF" style = "margin-left: 100px;"> <label for = "SF">Add to orders</label> </td>
                 </tr>
                 <tr>
-                    <td> <img src = "images/sf2in1.jpg"><p>2 Doners in size 1.5</p></td>
+                    <td> <img src = "images/sf2in1.jpg" class = "rounded-circle"><p>2 Doners in size 1.5</p></td>
                     <td> <h1 style="margin-left: 180px;"> 1240 ₸</h1></td>
                     <td> <H1 style="margin-left: 180px;">Shaurma Food</H1> </td>
-                    <td> <input type = "checkbox" id = "SF2" style = "margin-left: 100px;"> <label for = "SF2">Add to orders</label> </td>
+                    <td> <input class="form-check-input" type = "checkbox" id = "SF2" style = "margin-left: 100px;"> <label for = "SF2">Add to orders</label> </td>
                 </tr>
                 <tr>
-                    <td> <img src = "images/gamburger-sf.jpg"><p>Beef Hamburger</p></td>
+                    <td> <img src = "images/gamburger-sf.jpg" class = "rounded-circle"><p>Beef Hamburger</p></td>
                     <td> <h1 style="margin-left: 180px;"> 790 ₸</h1></td>
                     <td> <H1 style="margin-left: 180px;">Shaurma Food</H1> </td>
-                    <td> <input type = "checkbox" id = "SF3" style = "margin-left: 100px;"> <label for = "SF3">Add to orders</label> </td>
+                    <td> <input class="form-check-input" type = "checkbox" id = "SF3" style = "margin-left: 100px;"> <label for = "SF3">Add to orders</label> </td>
                 </tr>
             </table>
             <br>
@@ -72,8 +95,11 @@
             </form>
         </section>
     </div>
-
-    
+    <div class = "col sm-2 ms-3 float-end">
+        <marquee direction = "down" scrollamount = 10  height = 100%>
+            <img src = "images/Vector_BURGER.png" id = "rightScr"></marquee>
+    </div>
+    </div>
     <div id = "bottom" style="margin-bottom: -25px; background-color: red; color: azure;">
         <footer> 
                 <h3 style="margin-left: 1220px;">Alikhan Khamidulla</h3>
