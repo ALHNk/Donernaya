@@ -177,3 +177,4 @@ input[type=text] {
     width: auto; /* Maintain the aspect ratio by automatically adjusting the width */
     object-fit: cover; /* Ensure the image covers the container proportionally */
   }
+
