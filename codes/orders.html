@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Metal Mania' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src = "scripts/general.js"></script>
 
 </head>
 
@@ -37,10 +38,10 @@
             <div class =  "col sm-2">
                 <a href = "index.html" class="navbar-brand"><img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px" ><p>Main Page</p></a>
             </div>
-            <div class="col sm-4 pt-5">
+            <div class="col sm-2 pt-5">
             <header ><H1 >Discounts</H1></header>
             </div>
-            <div class = "col sm-4 pt-5">
+            <div class = "col sm-2 pt-5">
                 <button class="btn btn-primary float-end" style = "height: 60px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
                     Menu
                 </button>
@@ -49,7 +50,12 @@
                     <img src="images/Login_icon.png">
                 </button>
                 </a>
-                
+                <button class="btn float-end">
+                    <a href="FAQ.html"><img src="images/question.png"></a>
+                </button>
+                <button class="btn btn-lg btn-primary float-end me-2" id = "mode_btn" onclick="mode()">
+                    <img src = "images/dark_mode.png" height="45px;">
+                </button>
             </div>
         </div>
     </div>
