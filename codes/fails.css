@@ -177,6 +177,7 @@ input[type=text] {
     width: auto; /* Maintain the aspect ratio by automatically adjusting the width */
     object-fit: cover; /* Ensure the image covers the container proportionally */
   }
+
   .dark-mode{
     background-color: rgb(45, 41, 41);
     color: white;
@@ -185,3 +186,4 @@ input[type=text] {
     background-color: rgb(120, 85, 85);
     color: white;
 }
+

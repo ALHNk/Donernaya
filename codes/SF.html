@@ -8,6 +8,9 @@ QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5p
 NlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="
 anonymous">
      <link rel="stylesheet" href="fails.css">
+     <link rel="stylesheet" href="for_popup.css">
+     <script src="scripts/popup.js"></script>
+
 </head>
 
 <!-- <style>
@@ -143,6 +146,39 @@ li a {
   <textarea cols="30" rows="10" style="display: block; margin: 0 auto;"></textarea>
   <input type="reset" value="submit" style="display: block; margin: 20px auto;">
 </form>
+
+<div id="popup-container" >
+  <button class="footer-popup-btn" onclick="togglePopup()">
+      Subscribe
+      </button>
+
+    <div id="popupOverlay" 
+         class="overlay-container">
+        <div class="popup-box">
+            <h2 style="color: blue;">Subscribe</h2>
+            <form class="form-container">
+                <p>Subscribe to our doner review team to see more reviews!</p>
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input"
+                       type="email" 
+                       placeholder="Enter Your Email"
+                       id="email" 
+                       name="email" required>
+
+                <button class="btn-submit" 
+                        type="submit">
+                  Submit
+                  </button>
+            </form>
+
+            <button class="btn-close-popup" 
+                    onclick="togglePopup()">
+              Close
+              </button>
+        </div>
+    </div>
+
+</div>
 
 
 <div  style="background-color: red; color: white; padding: 20px; text-align: center; margin-bottom: -10px; margin-left: -20px; margin-right: -20px;"> 
