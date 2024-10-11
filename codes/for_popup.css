@@ -1,0 +1,123 @@
+/* Scope the entire popup to a specific ID to prevent global effects */
+.footer-popup-btn {
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 10px; /* Distance from the bottom of the viewport */
+    left: 10px;   /* Distance from the left of the viewport */
+    z-index: 999; /* Make sure it stays on top */
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+#popup-container {
+    font-size: 25px;
+}
+
+#popup-container .btn-open-popup {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#popup-container .btn-open-popup:hover {
+    background-color: #0f98b7;
+}
+
+#popup-container .overlay-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#popup-container .popup-box {
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    width: 320px;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+#popup-container .form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#popup-container .form-label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #444;
+    text-align: left;
+}
+
+#popup-container .form-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#popup-container .btn-submit,
+#popup-container .btn-close-popup {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#popup-container .btn-submit {
+    background-color: blue;
+    color: #fff;
+}
+
+#popup-container .btn-close-popup {
+    margin-top: 12px;
+    background-color: #3c75e7;
+    color: #fff;
+}
+
+#popup-container .btn-submit:hover,
+#popup-container .btn-close-popup:hover {
+    background-color: blue;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#popup-container .overlay-container.show {
+    display: flex;
+    opacity: 1;
+}
