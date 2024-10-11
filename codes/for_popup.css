@@ -1,20 +1,26 @@
 /* Scope the entire popup to a specific ID to prevent global effects */
+.footer-popup-btn {
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 10px; /* Distance from the bottom of the viewport */
+    left: 10px;   /* Distance from the left of the viewport */
+    z-index: 999; /* Make sure it stays on top */
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
 #popup-container {
-    /* This CSS is now scoped only to elements inside #popup-container */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-size: 25px;
 }
 
 #popup-container .btn-open-popup {
     padding: 12px 24px;
     font-size: 18px;
-    background-color: green;
+    background-color: blue;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -23,7 +29,7 @@
 }
 
 #popup-container .btn-open-popup:hover {
-    background-color: #4caf50;
+    background-color: #0f98b7;
 }
 
 #popup-container .overlay-container {
@@ -84,19 +90,19 @@
 }
 
 #popup-container .btn-submit {
-    background-color: green;
+    background-color: blue;
     color: #fff;
 }
 
 #popup-container .btn-close-popup {
     margin-top: 12px;
-    background-color: #e74c3c;
+    background-color: #3c75e7;
     color: #fff;
 }
 
 #popup-container .btn-submit:hover,
 #popup-container .btn-close-popup:hover {
-    background-color: #4caf50;
+    background-color: blue;
 }
 
 @keyframes fadeInUp {
