@@ -3,103 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Webpage</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .hero {
-      background-color: #0d1117;
-      color: white;
-      padding: 50px 0;
-    }
-    .placeholder-image {
-      background-color: #6c757d;
-      height: 250px;
-    }
-    .quote-section {
-      background-color: #f8f9fa;
-      padding: 50px;
-      text-align: center;
-    }
-    .cta-section {
-      background-color: #e9ecef;
-      padding: 50px;
-      text-align: center;
-    }
-    footer {
-      background-color: #0d1117;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+  <title>Document</title>
 </head>
-<body>
+<body >
 
-  <!-- Header Section -->
-  <header class="hero text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1>This website is awesome</h1>
-          <p>This website has some subtext that goes here under the main title. It’s a smaller font and the color is lower contrast.</p>
-          <button class="btn btn-primary">Sign up</button>
-        </div>
-        <div class="col-md-6">
-          <div class="placeholder-image"></div>
-        </div>
-      </div>
-    </div>
-  </header>
+  
 
-  <!-- Information Section -->
-  <section class="py-5 text-center">
-    <div class="container">
-      <h2>Some random information.</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="border rounded-3 p-3">
-            <p>This is some subtext under an illustration or image</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="border rounded-3 p-3">
-            <p>This is some subtext under an illustration or image</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="border rounded-3 p-3">
-            <p>This is some subtext under an illustration or image</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="border rounded-3 p-3">
-            <p>This is some subtext under an illustration or image</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Quote Section -->
-  <section class="quote-section">
-    <blockquote class="blockquote">
-      <p class="mb-0">This is an inspiring quote, or a testimonial from a customer. Maybe it’s just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-      <footer class="blockquote-footer">Thor, God of Thunder</footer>
-    </blockquote>
-  </section>
-
-  <!-- Call to Action Section -->
-  <section class="cta-section">
-    <h2>Call to action! It’s time!</h2>
-    <p>Sign up for our product by clicking that button right over there!</p>
-    <button class="btn btn-primary">Sign up</button>
-  </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>Copyright &copy; The Odin Project 2021</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  function random() {
+    alert( Math.floor(Math.random() * 9001 ) + 1000 ) ;
+  }
+  function guess() {
+    let mynumber = prompt("Choose a number between 10 and 100");
+    let m = Math.floor(Math.random() * 91) + 10;
+  
+    if (m === Number(mynumber)) {
+      alert("Let's goooooooooooooo!");
+    } else {
+      alert("NOOOOOOOOOOOOOOOOOOOOOOOO!");
+    }
+  }
+  </script>
 </body>
 </html>

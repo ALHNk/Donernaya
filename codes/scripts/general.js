@@ -35,7 +35,7 @@ function updateDateTime() {
       const distance = targetDate - now;
 
       if (distance < 0) {
-        document.getElementById('countdown').textContent = "Countdown finished!";
+        document.getElementById('countdown').textContent = "it was a joke we don't have another discounts";
         clearInterval(intervalId);
         return;
       }
