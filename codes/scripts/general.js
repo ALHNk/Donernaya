@@ -55,3 +55,13 @@ function updateDateTime() {
 
   const targetDate = new Date('november 1, 2024 23:59:59').getTime();
   startCountdown(targetDate);
+
+  function appear(targetId){
+    let targetObj = document.getElementById(targetId);
+    if(targetObj.style.display === "none"){
+      targetObj.style.display = "block";
+    }
+    else{
+      targetObj.style.display = "none";
+    }
+  }
