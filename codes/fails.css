@@ -186,7 +186,18 @@ input[type=text] {
     color: white;
 }
 
+
+.star {
+    font-size: 40px;
+    color: gray;
+    cursor: pointer;
+}
+.star.selected {
+    color: gold;
+}
+
 #train {
     position: relative;
     cursor: pointer;
   }
+
