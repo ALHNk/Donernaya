@@ -9,6 +9,35 @@ function mode(){
 
     
 }
+
+document.addEventListener('DOMContentLoaded', function(){
+  let isMenuOpen = false;
+  document.addEventListener('keydown', function(event) {
+    
+    switch(event.key){
+      case 'Shift' :        
+        let menu = document.getElementsByClassName("offcanvas")[0];
+        let bootstrapOffcanvas = new bootstrap.Offcanvas(menu);
+        if(!isMenuOpen){
+          bootstrapOffcanvas.show();
+          menu.setAttribute('data-bs-togle', 'offcanvas');
+          isMenuOpen = true;
+        }
+        else{          
+          bootstrapOffcanvas.hide();
+          menu.setAttribute('data-bs-dismiss', 'offcanvas');
+          isMenuOpen = false;
+        }        
+        break;
+     
+      default:
+      break;
+    }
+    
+  });
+});
+
+
 function updateDateTime() {
     const now = new Date();
     const time = {
@@ -65,3 +94,4 @@ function updateDateTime() {
       targetObj.style.display = "none";
     }
   }
+
