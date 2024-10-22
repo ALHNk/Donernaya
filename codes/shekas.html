@@ -123,7 +123,7 @@
                class="overlay-container">
               <div class="popup-box">
                   <h2 style="color: blue;">Subscribe</h2>
-                  <form class="form-container">
+                  <form class="form-container" id = "form-con">
                       <p>Subscribe to our doner review team to see more reviews!</p>
                       <label class="form-label" for="email">Email:</label>
                       <input class="form-input"
@@ -132,11 +132,17 @@
                              id="email" 
                              name="email" required>
       
-                      <button class="btn-submit" 
-                              type="submit">
+                      <button class="btn-submit"  onclick="popUpSubmit()"
+                              type="button">
                         Submit
                         </button>
                   </form>
+
+                  <div id = "after-form-check" >
+                    <h5 id = "pop-up-name"></h5>
+                    <form>
+                    <button class="btn btn-primary" type="submit">Submit</button></form>
+                  </div>
       
                   <button class="btn-close-popup" 
                           onclick="togglePopup()">
