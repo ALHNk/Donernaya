@@ -1,29 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body >
 
-  
+</html>
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    #train {
+      position: relative;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img id="train" src="https://js.cx/clipart/train.gif">
 
 
   <script>
-  function random() {
-    alert( Math.floor(Math.random() * 9001 ) + 1000 ) ;
-  }
-  function guess() {
-    let mynumber = prompt("Choose a number between 10 and 100");
-    let m = Math.floor(Math.random() * 91) + 10;
-  
-    if (m === Number(mynumber)) {
-      alert("Let's goooooooooooooo!");
-    } else {
-      alert("NOOOOOOOOOOOOOOOOOOOOOOOO!");
+    train.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        train.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 2000) clearInterval(timer);
+
+      }, 20);
     }
-  }
   </script>
+
+
 </body>
+
 </html>

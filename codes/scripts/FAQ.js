@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
     QUESTIONS.forEach(question =>{
         question.addEventListener('click', () =>{
             const ANSWER = question.nextElementSibling;
-
+            
             if(ANSWER.style.display === "block"){
                 ANSWER.style.display = 'none';
             }
