@@ -27,7 +27,10 @@ document.addEventListener('DOMContentLoaded', function(){
           bootstrapOffcanvas.hide();
           menu.setAttribute('data-bs-dismiss', 'offcanvas');
           isMenuOpen = false;
-        }        
+        }      
+        case 'Control':
+          mode();
+          break;  
         break;
      
       default:
