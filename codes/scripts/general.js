@@ -1,14 +1,30 @@
+//function on page loaded to set theme (We call it mode) to what user set it
+window.addEventListener('load', () =>{
+  if(localStorage.getItem("mode") === "dark"){
+     mode();
+  }
+ 
+});
+
+//function changes theme of the page 
 function mode(){
     var element = document.body;
-    element.classList.toggle("dark-mode");    
+    element.classList.toggle("dark-mode"); 
+    if(element.classList.contains("dark-mode")){
+      localStorage.setItem("mode", "dark"); // storing locally changed values of the theme if it is dark
+    }   
+    else {
+      localStorage.setItem("mode", "light"); // storing locally changed values of the theme if it is light
+    }
+    //if body of our page has cjildren elements such as DIVs, we will change children's background colour to different colour than body's
     if(element.hasChildNodes()){
         Array.from(element.children).forEach(child => {
             child.classList.toggle("child-dark-mode");
         });
-    }
-
-    
+    }    
 }
+
+
 
 document.addEventListener('DOMContentLoaded', function(){
   let isMenuOpen = false;
