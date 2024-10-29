@@ -44,7 +44,9 @@ document.addEventListener('DOMContentLoaded', function(){
           mode();
           break;  
         break;
-     
+      case 'Control':
+        mode();
+        break;
       default:
       break;
     }
