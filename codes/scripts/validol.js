@@ -1,3 +1,5 @@
+
+//main function to validatecheck email and password for correctness
 function mainFunction() {
   var form = document.getElementById('myForm');
   var firstName = form.querySelector('#validationDefault01').value; // Get the first name value

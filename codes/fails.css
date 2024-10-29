@@ -67,7 +67,7 @@ button:hover{
     background-color: bisque;
 }
 #imageContainer:hover{
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 
@@ -85,14 +85,14 @@ p{
 .mapContainer{
     margin-top: 20px;
     margin-left: 15%;
-    margin-right: 18%;
+    margin-right: 18.5%;
     border: 3px solid black;
 }
-.map:hover{
+/* .map:hover{
     box-shadow: 10px 10px 5px 2px lightblue;
     margin-top: -10px;
     margin-bottom: 10px;
-}
+} */
 .map{    
     height: 900px;
     width: 1000px;
