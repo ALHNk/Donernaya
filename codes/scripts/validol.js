@@ -18,6 +18,8 @@ function mainFunction() {
   localStorage.setItem('firstName', firstName);
   localStorage.setItem('password', passid.value);
   localStorage.setItem('email', sobakaid.value);
+  localStorage.setItem('userInfo', JSON.stringify({ email: sobakaid.value, password: 'HAHA, mechtai mechtai >:))', username: firstName }));
+
 
   // Redirect to login page
   window.location.href = "login.html";
