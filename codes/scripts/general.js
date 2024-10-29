@@ -40,14 +40,7 @@ document.addEventListener('DOMContentLoaded', function(){
           menu.setAttribute('data-bs-togle', 'offcanvas');
           isMenuOpen = true;
         }
-        
-        else{                                                       //hide offcanvas menu   
-          bootstrapOffcanvas.hide();
-          menu.setAttribute('data-bs-dismiss', 'offcanvas');
-          isMenuOpen = false;
-        }   
 
-        case 'Control':                                           //change theme if control pressed
           mode();
           break;  
         break;
