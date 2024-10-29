@@ -11,6 +11,8 @@ function loginFunction() {
       // Check if the entered password matches the stored password
       if (passwordInput.value === storedPassword) {
         alert("Login successful!");
+        localStorage.setItem('userInfo', JSON.stringify({ email: emailInput.value, password: 'HAHA, mechtai mechtai >:))', username: localStorage.getItem('firstName') }));
+
         // Optionally redirect to another page, e.g., user dashboard
         window.location.href = "index.html";
       } else {
@@ -23,6 +25,11 @@ function loginFunction() {
     return false; // Prevent default form submission
   }
   
+  function logout() {
+    localStorage.removeItem('userInfo');
+    window.location.href = "profile.html";
+
+  }
   // Add event listener for form submission
   window.onload = function() {
     var form = document.getElementById('loginForm');

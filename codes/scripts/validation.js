@@ -1,5 +1,6 @@
 
 //main function to validatecheck email and password for correctness
+
 function mainFunction() {
   var form = document.getElementById('myForm');
   var firstName = form.querySelector('#validationDefault01').value; // Get the first name value
@@ -17,11 +18,10 @@ function mainFunction() {
   }
 
   // Store information in localStorage
-  localStorage.setItem('firstName', firstName);
+   localStorage.setItem('firstName', firstName);
   localStorage.setItem('password', passid.value);
   localStorage.setItem('email', sobakaid.value);
-  localStorage.setItem('userInfo', JSON.stringify({ email: sobakaid.value, password: 'HAHA, mechtai mechtai >:))', username: firstName }));
-
+  
 
   // Redirect to login page
   window.location.href = "login.html";
