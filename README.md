@@ -1,6 +1,3 @@
-Here's a sample `README.md` file for the Donernaya repository:
-
-```markdown
 # Donernaya - Fast Food Review Website
 
 ![Project Logo](images/donerava.png)
