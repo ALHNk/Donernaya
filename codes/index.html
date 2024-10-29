@@ -14,50 +14,44 @@
     <script src="scripts/popup.js"></script>
     <script src="scripts/general.js"></script>
     <script src="scripts/stars.js"></script>
+    <script src="scripts/indexMobile.js"></script>
 </head>
 <body  data-spy="scroll" data-target=".navbar" data-offset="60">
-    <div class = "offcanvas offcanvas-end bg-danger" id = "menu">
+    <div class="offcanvas offcanvas-end bg-danger" id="menu">
         <div class="offcanvas-header">
             <h1 class="offcanvas-title text-white">Main Menu</h1>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class = "navbar navbar-inverse ">
-                <ul class="menu" style="list-style: none; display:flex; ">
-                    <li class = "navButtons"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
-                    <li class = "navButtons"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
-                    <li class = "navButtons"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
-                    <li class = "navButtons"><a href="profile.html"><img alt="Profile logo" src="images/profile.png" height="50px"></a></li>
-                    <li class = "navButtons"><a href="orders.html" class = "navButtons">Discounts</a></li>
-                </ul>
-            </div>
-          </div>
-    </div>
-    <nav class = "navbar  navbar-default fixed-top" style = "background-color: red;">
-    <header class="container-fluid ">
-        <div class="logo" style="display: flex; align-items: center;">
-            <a href="https://youtu.be/obmlZH3X9gs?si=uBa-980hhFLN6_xM">
-                <img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px">
-            </a>
-            <h1 style="color: white; margin-left: 20px;">Fast-food reviews</h1>
         </div>
-
-           <div class = "col sm-4 ">
-                <button class="btn btn-dark float-end btn-lg" style = "height: 60px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" title="Shift">
-                    Menu
-                </button>
-                <a href="login.html" class = "float-end me-5">
-                <button class = "btn btn-primary btn-sm">                
-                    <img src="images/Login_icon.png">
-                </button>
-                </a>
-                
+        <div class="offcanvas-body">
+            <ul class="menu list-unstyled d-flex">
+                <li class="navButtons me-2"><a href="bahandi.html"><img src="images/bahandilogo.png" alt="Bahandi logo" height="50"></a></li>
+                <li class="navButtons me-2"><a href="SF.html"><img src="images/shaurma-logo.png" alt="SF logo" height="50"></a></li>
+                <li class="navButtons me-2"><a href="shekas.html"><img src="images/zhekas-logo.png" alt="Zhekas logo" height="50"></a></li>
+                <li class="navButtons me-2"><a href="profile.html"><img src="images/profile.png" alt="Profile logo" height="50"></a></li>
+                <li class="navButtons"><a href="orders.html">Discounts</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-default fixed-top" style="background-color: red;">
+        <header class="container-fluid d-flex align-items-center justify-content-between">
+            <div class="logo d-flex align-items-center">
+                <a href="index.html"><img src="images/donerava.png" class="logoImg" alt="doneravatar" height="100"></a>
+                <h1 class="ms-3 text-white">Fast-food reviews</h1>
             </div>
-               
-    </header>
-</nav>
+            <div class="d-flex">
+                <a href="login.html" class="me-2"><button class="btn btn-primary btn-sm"><img src="images/Login_icon.png"></button></a>
+                <button class="btn me-2"><a href="FAQ.html"><img src="images/question.png" alt="FAQ icon"></a></button>
+                <button class="btn btn-lg btn-primary" id="mode_btn" onclick="mode()" title="Control"><img src="images/dark_mode.png" height="45"></button>
+                <button class="btn btn-primary btn-lg ms-2" data-bs-toggle="offcanvas" data-bs-target="#menu" title="Shift">Menu</button>
+            </div>
+        </header>
+    </nav>
 <div class="container-fluid" style="height: 250px; background-color: red;">
     <div class = "container-fluid bg-danger" style="height: 100px;">
+    </div>
+    <div class = "container-fluid bg-danger" style="height: 60px;" id = "mobileSpace">
     </div>
     <div class="container justify-content-center text-white">
         <H1 >KIM REVIEWERS</H1>
@@ -76,20 +70,20 @@
 
         </p>
         <div style=" margin-top: -20px; margin-bottom: -25px; margin-right: -40px;">
-            <img src="images/background-doner.png" alt="Zheka's doner house example" width="1100px" height="700">
+            <img src="images/background-doner.png" alt="Zheka's doner house example" width="1100px" height="700" id = "extra">
         </div>
     </div>
 
-    <div class="container-fluid ">
-        <div class =  "row"> <div class = "col lg-2"> </div>
-        <h1 class = "col lg-2" >Place we discovered</h1>
-        <div class="col lg-2"></div>
-        </div>
-      </div>
-    
-      <div id = "content" style="margin-top: 3px; margin-left: 10%; margin-right: 0%;">
-        <marquee direction = "right" scrollamount = 10  height = 100%>
-            <img src = "images/wearetogether.png" id = "rightScr"></marquee>
+    <!-- Discoveries Section -->
+    <div class="container-fluid text-center py-4">
+        <h1 class="display-5">Places we discovered</h1>
+    </div>
+
+    <!-- Marquee Section -->
+    <div class="container-fluid text-center my-4">
+        <marquee direction="right" scrollamount="10" class="d-inline-block">
+            <img src="images/wearetogether.png" id="rightScr" class="img-fluid" style="max-height: 200px;">
+        </marquee>
     </div>
 
     <div id="popup-container" >
