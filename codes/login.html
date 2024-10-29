@@ -8,7 +8,7 @@
 integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="fails.css">
-    <script src="validol.js"></script>
+    <script src="scripts/login.js"></script>
 </head>
 
 <body 
@@ -41,25 +41,26 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     
         
     <div class="center">
-        <div class="box" style="background-color: white; opacity: 85%; height: 35%;" >
-            <form >
+        <div class="box" style="background-color: white; opacity: 85%; height: 35%; ">
+            <form id="loginForm" onsubmit="return loginFunction()">
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                  </div>
-                  <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
-                  </div>
-    <button type="submit">
-        <a href="index.html" style="color: blue; text-decoration: none;">enter</a>
-    </button>
-    <button type="submit">
-        <a href="register.html" style="color: blue; text-decoration: none;">register</a>
-    </button>
-    </form>
-</div>
- </div>
+                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+                    <label for="emailInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
+                    <label for="passwordInput">Password</label>
+                </div>
+                <button type="submit" style="background: none; border: none; padding: 0; font-size: 25px;">
+                    <span style="color: blue; text-decoration: underline;">Enter</span>
+                </button>
+                <button type="button" onclick="window.location.href='register.html'" style="background: none; border: none; padding: 0; margin-left: 25px; font-size: 25px;">
+                    <span style="color: blue; text-decoration: underline;">Register</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    
 
  <div class="city" style="background-color: red; color: white; padding: 20px; text-align: center; margin-bottom: -10px; margin-left: -20px; margin-right: -20px;"> 
     <p>Merikhan ABubakir</p>

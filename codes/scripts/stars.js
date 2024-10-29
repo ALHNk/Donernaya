@@ -14,19 +14,9 @@ function starsRatings() {
     });
 }
 
-function dynamicMessageScript() {
-    const messageElement = document.getElementById('message');
-    const buttonElement = document.getElementById('update-message-btn');
 
-    buttonElement.addEventListener('click', () => {
-        messageElement.textContent = 'Enjoy your meal and review your experience!';
-    });
-}
-
-// Call the functions after the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     starsRatings();
-    dynamicMessageScript();
 });
 
 
