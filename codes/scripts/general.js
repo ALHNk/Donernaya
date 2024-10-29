@@ -23,11 +23,12 @@ document.addEventListener('DOMContentLoaded', function(){
           menu.setAttribute('data-bs-togle', 'offcanvas');
           isMenuOpen = true;
         }
-        else{          
-          bootstrapOffcanvas.hide();
-          menu.setAttribute('data-bs-dismiss', 'offcanvas');
-          isMenuOpen = false;
-        }      
+        // else{          
+        //   bootstrapOffcanvas.hide();
+        //   menu.setAttribute('data-bs-dismiss', 'offcanvas');
+        //   isMenuOpen = false;
+        // }      
+        break;
         case 'Control':
           mode();
           break;  

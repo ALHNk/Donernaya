@@ -1,22 +1,20 @@
 window.onload = function () {
   const audio = document.getElementById("myAudio");
-  let currentSource = ""; // Track the currently playing source
-
-  // Function to toggle audio play/pause based on the same source
+  let currentSource = ""; 
+  
   function toggleAudio(source) {
       if (currentSource === source && !audio.paused) {
-          audio.pause(); // Pause if clicking on the same source
+          audio.pause(); 
       } else {
-          audio.pause(); // Pause any ongoing audio
-          audio.currentTime = 0; // Reset to start
-          audio.querySelector("source").src = source; // Change source
-          audio.load(); // Load new source
-          audio.play(); // Play the new audio
-          currentSource = source; // Set the new current source
+          audio.pause(); 
+          audio.currentTime = 0; 
+          audio.querySelector("source").src = source; 
+          audio.load();
+          audio.play();
+          currentSource = source; 
       }
   }
 
-  // Attach event listeners to each question
   document.getElementById("q1").addEventListener("click", () => toggleAudio("audio/answer1.mp3"));
   document.getElementById("q2").addEventListener("click", () => toggleAudio("audio/answer2mp3.mp3"));
   document.getElementById("q3").addEventListener("click", () => toggleAudio("audio/answer3og.ogg"));

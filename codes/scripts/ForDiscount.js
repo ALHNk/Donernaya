@@ -17,25 +17,33 @@ function winDiscount(){
 }
 
 let allDiscountRows = document.getElementsByClassName('discountRows');
-function filterRestaurant(selector){
+function filterRestaurant(selector) {
     let selectedElement = selector.value;
-    if(selectedElement === "All"){
-        Array.from(allDiscountRows).forEach(discountRow =>{
+
+    localStorage.setItem('selectedRestaurant', selectedElement);
+    
+    if (selectedElement === "All") {
+        Array.from(allDiscountRows).forEach(discountRow => {
             discountRow.style.display = 'table-row';
         });
-    } 
-    else{
+    } else {
         Array.from(allDiscountRows).forEach(discountRow => {
-        discountRow.style.display = 'table-row';
-        let restaurantName = discountRow.querySelector('#restaurantName');
-        console.log(restaurantName.innerText, selectedElement);
-        if (restaurantName.innerText === selectedElement){
             discountRow.style.display = 'table-row';
-        }
-        else {
-            discountRow.style.display = 'none';
-        }
-     });
-    }    
-     
+            let restaurantName = discountRow.querySelector('#restaurantName');
+            console.log(restaurantName.innerText, selectedElement);
+            if (restaurantName.innerText === selectedElement) {
+                discountRow.style.display = 'table-row';
+            } else {
+                discountRow.style.display = 'none';
+            }
+        });
+    }
 }
+
+window.onload = function() {
+    const savedFilter = localStorage.getItem('selectedRestaurant');
+    if (savedFilter) {
+        document.getElementById('resSel').value = savedFilter;
+        filterRestaurant(document.getElementById('resSel'));
+    }
+};
