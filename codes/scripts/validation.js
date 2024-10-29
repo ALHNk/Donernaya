@@ -1,3 +1,5 @@
+
+//main function to validatecheck email and password for correctness
 function mainFunction() {
   var form = document.getElementById('myForm');
   var passid = document.getElementById('passid');
@@ -34,7 +36,7 @@ function sobakaid_validol(sobakaid) {
   return false; 
 }
 window.onload = function() {
-  let train = document.getElementById('train'); // make sure you select the element
+  let train = document.getElementById('train'); 
   train.onclick = function() {
     let start = Date.now();
 

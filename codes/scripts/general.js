@@ -25,7 +25,7 @@ function mode(){
 }
 
 
-
+//Event Listener for keys from keyboard
 document.addEventListener('DOMContentLoaded', function(){
   let isMenuOpen = false;
   document.addEventListener('keydown', function(event) {
@@ -34,17 +34,20 @@ document.addEventListener('DOMContentLoaded', function(){
       case 'Shift' :        
         let menu = document.getElementsByClassName("offcanvas")[0];
         let bootstrapOffcanvas = new bootstrap.Offcanvas(menu);
-        if(!isMenuOpen){
+        
+        if(!isMenuOpen){                                            //show the bootstrap offcanvas menu if it is hided
           bootstrapOffcanvas.show();
           menu.setAttribute('data-bs-togle', 'offcanvas');
           isMenuOpen = true;
         }
-        else{          
+        
+        else{                                                       //hide offcanvas menu   
           bootstrapOffcanvas.hide();
           menu.setAttribute('data-bs-dismiss', 'offcanvas');
           isMenuOpen = false;
-        }      
-        case 'Control':
+        }   
+
+        case 'Control':                                           //change theme if control pressed
           mode();
           break;  
         break;
@@ -56,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 });
 
-
+//Function to show time in 24 hours method
 function updateDateTime() {
     const now = new Date();
     const time = {
@@ -74,9 +77,9 @@ function updateDateTime() {
 
   // Update the time every second
   setInterval(updateDateTime, 1000);
-//   updateDateTime(); // Call immediately to display on load
 
   
+  //special countdown till next Diuscount
   function startCountdown(targetDate) {
     function updateCountdown() {
       const now = new Date().getTime();
@@ -104,6 +107,7 @@ function updateDateTime() {
   const targetDate = new Date('november 1, 2024 23:59:59').getTime();
   startCountdown(targetDate);
 
+  //function to show and hide some divs
   function appear(targetId){
     let targetObj = document.getElementById(targetId);
     if(targetObj.style.display === "none"){
