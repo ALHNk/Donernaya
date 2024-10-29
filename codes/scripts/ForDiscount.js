@@ -1,4 +1,4 @@
-
+//special function for game which creates random number and checks if user guess it
 function guessNumber(){
     let gameInput = document.getElementById('gameInput').value;
     let gameRandom = Math.floor(Math.random() * 3)+1;
@@ -11,11 +11,14 @@ function guessNumber(){
     }
 }
 
+// function gives new discount
 function winDiscount(){
     const NEW_DISCOUNT = document.getElementById("newDiscount");
     NEW_DISCOUNT.style.display = "table-row";
 }
 
+
+//function to fillter discounts by restaurant
 let allDiscountRows = document.getElementsByClassName('discountRows');
 function filterRestaurant(selector) {
     let selectedElement = selector.value;

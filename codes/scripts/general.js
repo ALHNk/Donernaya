@@ -1,15 +1,31 @@
+//function on page loaded to set theme (We call it mode) to what user set it
+window.addEventListener('load', () =>{
+  if(localStorage.getItem("mode") === "dark"){
+     mode();
+  }
+ 
+});
+
+//function changes theme of the page 
 function mode(){
     var element = document.body;
-    element.classList.toggle("dark-mode");    
+    element.classList.toggle("dark-mode"); 
+    if(element.classList.contains("dark-mode")){
+      localStorage.setItem("mode", "dark"); // storing locally changed values of the theme if it is dark
+    }   
+    else {
+      localStorage.setItem("mode", "light"); // storing locally changed values of the theme if it is light
+    }
+    //if body of our page has cjildren elements such as DIVs, we will change children's background colour to different colour than body's
     if(element.hasChildNodes()){
         Array.from(element.children).forEach(child => {
             child.classList.toggle("child-dark-mode");
         });
-    }
-
-    
+    }    
 }
 
+
+//Event Listener for keys from keyboard
 document.addEventListener('DOMContentLoaded', function(){
   let isMenuOpen = false;
   document.addEventListener('keydown', function(event) {
@@ -18,18 +34,13 @@ document.addEventListener('DOMContentLoaded', function(){
       case 'Shift' :        
         let menu = document.getElementsByClassName("offcanvas")[0];
         let bootstrapOffcanvas = new bootstrap.Offcanvas(menu);
-        if(!isMenuOpen){
+        
+        if(!isMenuOpen){                                            //show the bootstrap offcanvas menu if it is hided
           bootstrapOffcanvas.show();
           menu.setAttribute('data-bs-togle', 'offcanvas');
           isMenuOpen = true;
         }
-        // else{          
-        //   bootstrapOffcanvas.hide();
-        //   menu.setAttribute('data-bs-dismiss', 'offcanvas');
-        //   isMenuOpen = false;
-        // }      
-        break;
-        case 'Control':
+
           mode();
           break;  
         break;
@@ -41,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 });
 
-
+//Function to show time in 24 hours method
 function updateDateTime() {
     const now = new Date();
     const time = {
@@ -59,9 +70,9 @@ function updateDateTime() {
 
   // Update the time every second
   setInterval(updateDateTime, 1000);
-//   updateDateTime(); // Call immediately to display on load
 
   
+  //special countdown till next Diuscount
   function startCountdown(targetDate) {
     function updateCountdown() {
       const now = new Date().getTime();
@@ -89,6 +100,7 @@ function updateDateTime() {
   const targetDate = new Date('november 1, 2024 23:59:59').getTime();
   startCountdown(targetDate);
 
+  //function to show and hide some divs
   function appear(targetId){
     let targetObj = document.getElementById(targetId);
     if(targetObj.style.display === "none"){
