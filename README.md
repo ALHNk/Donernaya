@@ -1,6 +1,6 @@
 # Donernaya - Fast Food Review Website
 
-![Project Logo](images/donerava.png)
+![Project Logo](codes/images/donerava.png)
 
 ## Project Overview
 Donernaya is a static front-end website that showcases popular fast-food chains in Kazakhstan, providing users with reviews, menu details, and current discounts. Created as a simple HTML and CSS project, it features pages dedicated to chains like Bahandi Burgers, Shaurma Food, and Zheka’s Doner. Users can browse reviews, explore menus, and learn about each restaurant's specialties.
