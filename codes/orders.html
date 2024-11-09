@@ -24,42 +24,29 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
               </div>
               <div class="offcanvas-body">
-                <div class = "navbar navbar-inverse ">
-                    <ul class="menu" style="list-style: none; display:flex;">
-                        <li class = "navButtons"><a href="bahandi.html"><img alt="Bahandi logotype" src="images/bahandilogo.png" height="50px"></a></li>
-                        <li class = "navButtons"><a href="SF.html"><img alt="SF logotype" src="images/shaurma-logo.png" height="50px"></a></li>
-                        <li class = "navButtons"><a href="shekas.html"><img alt="Zhekas logotype" src="images/zhekas-logo.png" height="50px"></a></li>
-                        <li class = "navButtons"><a href="profile.html"><img alt="Profile logo" src="images/profile.png" height="50px"></a></li>
-                        <li class = "navButtons"><a href="orders.html" class = "navButtons">Discounts</a></li>
-                        
-                    </ul>
-                </div>
-              </div>
-        </div>
-        <nav class = "navbar  navbar-default fixed-top" style = "background-color: red;">
-        <header class="container-fluid ">
-            <div class="logo" style="display: flex; align-items: center;">
-                <a href="index.html">
-                    <img class="logoImg" alt="doneravatar" src="images/donerava.png" height="100px">
-                </a>
-                <h1 style="color: white; margin-left: 15px;">Discounts</h1>
+                <ul class="menu list-unstyled d-flex">
+                    <li class="navButtons me-2"><a href="bahandi.html"><img src="images/bahandilogo.png" alt="Bahandi logo"  height="50"></a></li>
+                    <li class="navButtons me-2"><a href="SF.html"><img src="images/shaurma-logo.png" alt="SF logo" height="50"></a></li>
+                    <li class="navButtons me-2"><a href="shekas.html"><img src="images/zhekas-logo.png" alt="Zhekas logo" height="50"></a></li>
+                    <li class="navButtons me-2"><a href="profile.html"><img src="images/profile.png" alt="Profile logo" height="50"></a></li>
+                    <li class="navButtons"><a href="orders.html">Discounts</a></li>
+                </ul>
+                <ul class="menu list-unstyled d-flex">
+                    <li class="navButtons me-2"><a href="FAQ.html"><img src="images/question.png" alt="FAQ icon"> FAQ</a></li>
+                    <li class="navButtons"><a href="login.html"><img src="images/Login_icon.png" alt="Login icon"> Login</a></li>
+                </ul>
             </div>
+            
+        </div>
         
-               <div class = "col sm-4 ">
-                    <button class="btn btn-primary float-end btn-lg" style = "height: 60px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" title="Shift">
-                        Menu
-                    </button>
-                    <a href="login.html" class = "float-end me-5">
-                    <button class = "btn btn-primary btn-sm">                
-                        <img src="images/Login_icon.png">
-                    </button>
-                    </a>
-                    <button class="btn float-end">
-                        <a href="FAQ.html"><img src="images/question.png"></a>
-                    </button>
-                    <button class="btn btn-lg btn-primary float-end me-2" id = "mode_btn" onclick="mode()" title = "Control">
-                        <img src = "images/dark_mode.png" height="45px;">
-                    </button>
+        <!-- Navbar -->
+        <nav class="navbar navbar-default fixed-top" style="background-color: red;">
+            <header class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="logo d-flex align-items-center">
+                    <a href="index.html"><img src="images/donerava.png" class="logoImg" alt="doneravatar" height="100"></a>
+                    <h1 class="ms-3 text-white">Register</h1>
+                </div>
+                <button class="btn btn-primary btn-lg ms-auto" data-bs-toggle="offcanvas" data-bs-target="#menu" title="Menu">Menu</button>
                 </div>
                    
         </header>
