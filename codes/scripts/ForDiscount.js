@@ -43,6 +43,24 @@ function filterRestaurant(selector) {
     }
 }
 
+
+function onOrdersSubmitted(){
+    let arrayOfOrders = [];
+    if(localStorage.getItem('userInfo') === null){
+        alert('please sign in');
+        return;
+    }
+    Array.from(allDiscountRows).forEach(discountRow =>{
+        const checkbox = discountRow.querySelector('.form-check-input');
+        if (checkbox && checkbox.checked) {
+            alert("hi")
+            arrayOfOrders.push("<tr>" + discountRow.innerHTML + "</tr>");
+        }
+    });
+
+    localStorage.setItem('arrayOfOrders', JSON.stringify(arrayOfOrders));
+}
+
 window.onload = function() {
     const savedFilter = localStorage.getItem('selectedRestaurant');
     if (savedFilter) {
