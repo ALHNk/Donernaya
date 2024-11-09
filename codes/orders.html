@@ -79,7 +79,7 @@
         
         <div class = "col sm-12 ms-5 float-start">
         <section>
-            <form>
+            <form onsubmit="onOrdersSubmitted()">
             <h1 class = "metalFont" style = "font-size: 100px;">Discounts</h1>
             
             <table class = "table table-bordered table-warning table-hover">            
@@ -113,9 +113,9 @@
                     <td> <img src = "images/gamburger-sf.jpg" class = "rounded-circle"><p>Beef Hamburger</p></td>
                     <td> <h1 style="margin-left: 180px;"> 790 ₸</h1></td>
                     <td id = "restaurantName"> <H1 style="margin-left: 180px;">Bahandi</H1> </td>
-                    <td> <input class="form-check-input" type = "checkbox" id = "SF3" style = "margin-left: 100px;"> <label for = "SF3">Add to orders</label> </td>
+                    <td > <input class="form-check-input" type = "checkbox" id = "SF3" style = "margin-left: 100px;"> <label for = "SF3">Add to orders</label> </td>
                 </tr >
-                <tr id = "newDiscount" style="display:none;">
+                <tr class="discountRows" id = "newDiscount" style="display:none;">
                     <td> <img src = "images/990tg.png" height="60px" class = "rounded-circle"><p>Special NEw Discount</p></td>
                     <td> <h1 style="margin-left: 180px;"> 790 ₸</h1></td>
                     <td> <H1 style="margin-left: 180px;">Special From Us</H1> </td>

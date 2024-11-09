@@ -73,6 +73,9 @@
         <h2 class="profile-header">User Profile</h2>
         <div id="profileInfo" class="profile-info">
             <!-- User information will be displayed here -->
+             <table id = "ordersTable">
+
+             </table>
         </div>
     </div>
         <button type="button" onclick="logout()">Logout</button>
@@ -85,6 +88,10 @@
     </footer>
 
     <script>
+
+        function displayOrders(){
+            document.getElementById("ordersTable").innerHTML = JSON.parse(localStorage.getItem('arrayOfOrders'));
+        }
 
         // Function to display user information from localStorage
         function displayProfile() {
@@ -104,6 +111,7 @@
 
         // Call the displayProfile function when the page loads
         window.onload = displayProfile;
+        window.onload = displayOrders;
     </script>
 </body>
 </html>
