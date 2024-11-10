@@ -64,53 +64,68 @@
 
     <div class = "row">
         
-        <div class = "col sm-12 ms-5 float-start">
+        <div class = "col sm-12 ms-1 ms-md-5 float-start">
         <section>
             <form onsubmit="onOrdersSubmitted()">
             <h1 class = "metalFont" style = "font-size: 100px;">Discounts</h1>
             
-            <table class = "table table-bordered table-warning table-hover">            
-                <thead class = "table table-success">
-                    <td> <h2 style="margin-left: 100px;">Food</h2></td>
-                    <td><h2 style="margin-left: 180px;">Price</h2> <input type="text" id = "priceInput" style = "width: 70%; margin-left: 20%; margin-right: 10%;"></td> 
-                    <td>
-                        <h2 style="margin-left: 80px;">Restaurant</h2> 
-                        <select id = "resSel" style="float: right;" onchange = "filterRestaurant(this)">
-                            <option value="Shaurma Food">SF</option>
-                            <option value="Bahandi">Bahandi</option>
-                            <option value="Zhekas">Zhekas</option>
-                            <option value="All">All</option>
-                        </select>   
-                    </td>
-                    <td><h2 style="margin-left: 100px;">Choose</h2></td>
+            <table class="table table-bordered table-warning table-hover">
+                <thead class="table-success">
+                    <tr>
+                        <th>Food</th>
+                        <th>Price <input type="text" id="priceInput" class="form-control" style="width: 70%; margin-left: 20%;"></th>
+                        <th><h2 style="margin-left: 80px;">Restaurant</h2> 
+                            <select id = "resSel" style="float: right;" onchange = "filterRestaurant(this)">
+                                <option value="Shaurma Food">SF</option>
+                                <option value="Bahandi">Bahandi</option>
+                                <option value="Zhekas">Zhekas</option>
+                                <option value="All">All</option>
+                            </select>   </th>
+                        <th>Choose</th>
+                    </tr>
                 </thead>
-                <tr class = "discountRows">
-                    <td> <img src = "images/kombo-margo_SF.jpg" class = "rounded-circle" alt = "Kombo in SF" ><p> - 1 Nagets - 1 Limonad</p></td>
-                    <td> <h1 id = "value" style="margin-left: 180px;">3680</h1></td>
-                    <td id = "restaurantName"> <H1 style="margin-left: 180px;">Shaurma Food</H1> </td>
-                    <td> <input class="form-check-input" type = "checkbox" id = "SF" style = "margin-left: 100px;"> <label for = "SF">Add to orders</label> </td>
-                </tr>
-                <tr class = "discountRows">
-                    <td> <img src = "images/sf2in1.jpg" class = "rounded-circle"><p>2 Doners in size 1.5</p></td>
-                    <td> <h1 id = "value" style="margin-left: 180px;">1240</h1></td>
-                    <td id = "restaurantName"> <H1 style="margin-left: 180px;">Shaurma Food</H1> </td>
-                    <td> <input class="form-check-input" type = "checkbox" id = "SF2" style = "margin-left: 100px;"> <label for = "SF2">Add to orders</label> </td>
-                </tr>
-                <tr class = "discountRows">
-                    <td> <img src = "images/gamburger-sf.jpg" class = "rounded-circle"><p>Beef Hamburger</p></td>
-                    <td> <h1 id = "value" style="margin-left: 180px;">790</h1></td>
-                    <td id = "restaurantName"> <H1 style="margin-left: 180px;">Bahandi</H1> </td>
-                    <td > <input class="form-check-input" type = "checkbox" id = "SF3" style = "margin-left: 100px;"> <label for = "SF3">Add to orders</label> </td>
-                </tr >
-                <tr class="discountRows" id = "newDiscount" style="display:none;">
-                    <td> <img src = "images/990tg.png" height="60px" class = "rounded-circle"><p>Special NEw Discount</p></td>
-                    <td> <h1 id = "value" style="margin-left: 180px;">790</h1></td>
-                    <td> <H1 style="margin-left: 180px;">Special From Us</H1> </td>
-                    <td> <input class="form-check-input" type = "checkbox" id = "Special" style = "margin-left: 100px;"> <label for = "Special">Add to orders</label> </td>
-                </tr>
+                <tbody>
+                    <tr class="discountRows">
+                        <td>
+                            <img src="images/kombo-margo_SF.jpg" class="rounded-circle" alt="Kombo in SF">
+                            <p>- 1 Nagets - 1 Limonad</p>
+                        </td>
+                        <td><h1 id="value">3680</h1></td>
+                        <td id="restaurantName"><h1>Shaurma Food</h1></td>
+                        <td><input class="form-check-input" type="checkbox" id="SF"><label for="SF">Add to orders</label></td>
+                    </tr>
+                    <tr class="discountRows">
+                        <td>
+                            <img src="images/sf2in1.jpg" class="rounded-circle">
+                            <p>2 Doners in size 1.5</p>
+                        </td>
+                        <td><h1 id="value">1240</h1></td>
+                        <td id="restaurantName"><h1>Shaurma Food</h1></td>
+                        <td><input class="form-check-input" type="checkbox" id="SF2"><label for="SF2">Add to orders</label></td>
+                    </tr>
+                    <tr class="discountRows">
+                        <td>
+                            <img src="images/gamburger-sf.jpg" class="rounded-circle">
+                            <p>Beef Hamburger</p>
+                        </td>
+                        <td><h1 id="value">790</h1></td>
+                        <td id="restaurantName"><h1>Bahandi</h1></td>
+                        <td><input class="form-check-input" type="checkbox" id="SF3"><label for="SF3">Add to orders</label></td>
+                    </tr>
+                    <tr class="discountRows" id="newDiscount" style="display:none;">
+                        <td>
+                            <img src="images/990tg.png" height="60px" class="rounded-circle">
+                            <p>Special New Discount</p>
+                        </td>
+                        <td><h1 id="value">790</h1></td>
+                        <td><h1>Special From Us</h1></td>
+                        <td><input class="form-check-input" type="checkbox" id="Special"><label for="Special">Add to orders</label></td>
+                    </tr>
+                </tbody>
             </table>
+            
             <br>
-            <label for = "comments" class="comicFont" style="margin-left: 500px;"> Comments to the order    <input type="text" id = "comments" style="margin-left: 10px;"> 
+            <label for = "comments" class="comicFont" style="margin-left: 15%;"> Comments to the order    <input type="text" id = "comments" style="margin-left: 10px;"> 
                 <input type="submit" value="Order">
             </form>
         </section>

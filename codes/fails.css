@@ -157,8 +157,96 @@ p{
 }
 
 
-table, tr, td {
-    border: 10px solid green;
+/* Style the table header */
+thead {
+    background-color: #28a745;  /* Green background */
+    color: white;  /* White text */
+    text-align: left;  /* Align text to the left */
+}
+
+
+/* For desktop/tablet screens, set table headers' alignment and font size */
+@media (min-width: 769px) {
+    thead {
+        font-size: 18px;  /* Larger font size for desktop */
+    }
+
+    thead th {
+        padding: 12px;  /* Increased padding for desktop */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .table {
+        margin-left: 0%;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    thead {
+        font-size: 14px; /* Reduce font size on mobile */
+        text-align: center; /* Center align text on mobile for better appearance */
+        display: block;
+    }
+
+    thead th {
+        padding: 8px; /* Adjust padding to make it more compact */
+    }
+
+    .table th, .table td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    .table img {
+        max-width: 50px; /* Adjust the image size on mobile */
+        height: auto;
+    }
+
+    .table h1 {
+        font-size: 16px; /* Make headings smaller on mobile */
+    }
+
+    /* Make the price input field more responsive */
+    #priceInput {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form-check-input {
+        margin-left: 0; /* Align checkbox better on smaller screens */
+    }
+
+    /* Stack the table columns vertically for smaller screens */
+    .discountRows td {
+        display: block;
+        width: 100%;
+    }
+
+    .discountRows td label {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    /* Hide the restaurant name in small screen sizes, show in desktop */
+    #restaurantName h1 {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    /* Add some space between rows for better visual appearance */
+    .discountRows {
+        margin-bottom: 15px;
+    }
+
+    label {
+        margin-left: 15%;
+    }
+    .metalFont{
+        font-size: 20px;
+    }
 }
 
 input[type=submit]{
