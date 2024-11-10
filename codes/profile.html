@@ -94,7 +94,9 @@
     <script>
 
         function displayOrders(){
-            document.getElementById("ordersTable").innerHTML = JSON.parse(localStorage.getItem('arrayOfOrders'));
+            if(localStorage.getItem("userInfo") != null){
+                document.getElementById("ordersTable").innerHTML = JSON.parse(localStorage.getItem('arrayOfOrders'));
+            }
         }
 
         // Function to display user information from localStorage
