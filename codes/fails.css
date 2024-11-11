@@ -135,16 +135,16 @@ p{
 
 
 .index_info{
-    background-image: url(images/grey-back.png); 
+    /* background-image: url(images/grey-back.png);  */
     background-size: cover;
-    color: white;  /* Light text to contrast the background */
+    /* color: white;  Light text to contrast the background */
     padding: 20px;
     height: 700px; 
     margin-bottom: -20px; 
     margin-top: -20px; 
     margin-left: -30px;
     text-shadow: black;
-    background-color: black;
+    /* background-color: black; */
     font-size: 27px;
     text-align: center;
 }

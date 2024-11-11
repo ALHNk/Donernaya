@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function(){
   document.addEventListener('keydown', function(event) {
     
     switch(event.key){
-      case 'Shift' :        
+      case 'Escape' :        
         let menu = document.getElementsByClassName("offcanvas")[0];
         let bootstrapOffcanvas = new bootstrap.Offcanvas(menu);
         
@@ -40,8 +40,11 @@ document.addEventListener('DOMContentLoaded', function(){
           menu.setAttribute('data-bs-togle', 'offcanvas');
           isMenuOpen = true;
         }
+        else{
+          //bootstrapOffcanvas.hide();
+          isMenuOpen = false;
+        }
 
-          mode();
           break;  
         break;
       case 'Control':

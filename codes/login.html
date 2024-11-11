@@ -12,13 +12,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     <script src="scripts/login.js"></script>
 </head>
 
-<body 
-   style="background-image: url('images/madik.png'); 
-          background-repeat: no-repeat; 
-          background-attachment: fixed; 
-          background-size: cover; 
-          margin: 0; 
-          height: 100vh;">
+<body class="bodyBack">
 
     
 
@@ -42,20 +36,23 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
             <li class="navButtons"><a href="login.html"><img src="images/Login_icon.png" alt="Login icon"> Login</a></li>
         </ul>
     </div>
-    
-</div>
-
-<!-- Navbar -->
-<nav class="navbar navbar-default fixed-top" style="background-color: red;">
-    <header class="container-fluid d-flex align-items-center justify-content-between">
-        <div class="logo d-flex align-items-center">
-            <a href="index.html"><img src="images/donerava.png" class="logoImg" alt="doneravatar" height="100"></a>
-            <h1 class="ms-3 text-white">Login</h1>
-        </div>
-            <button class="btn btn-primary btn-lg me-2" data-bs-toggle="offcanvas" data-bs-target="#menu" title="Shift">Menu</button>
-        </div>
-    </header>
-</nav>
+  </div>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-default fixed-top" style="background-color: red;">
+      <header class="container-fluid d-flex align-items-center justify-content-between">
+          <div class="logo d-flex align-items-center">
+              <a href="index.html"><img src="images/donerava.png" class="logoImg" alt="doneravatar" height="100"></a>
+              <h1 class="ms-3 text-white">Login</h1>
+          </div>
+          <div class="d-flex">                
+            <button class="btn btn-lg btn-primary float-end me-2" id = "mode_btn" onclick="mode()" title = "Control">
+              <img src = "images/dark_mode.png" height="45px;">
+          </button>
+              <button class="btn btn-primary btn-lg me-2" data-bs-toggle="offcanvas" data-bs-target="#menu" title="Shift">Menu</button>
+          </div>
+      </header>
+  </nav>
     
         
     <div class="center">
