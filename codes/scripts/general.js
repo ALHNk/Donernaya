@@ -120,7 +120,7 @@ function updateDateTime() {
     updateCountdown(); // Run immediately on load
   }
 
-  const targetDate = new Date('november 1, 2024 23:59:59').getTime();
+  const targetDate = new Date('november 12, 2024 12:06:00').getTime();
   startCountdown(targetDate);
 
   //function to show and hide some divs
