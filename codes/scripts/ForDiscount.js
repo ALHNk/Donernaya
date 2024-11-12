@@ -67,14 +67,13 @@ async function getDataFromCurrencyAPI(){
 
     const savedData = localStorage.getItem("currencyData");
     const today = new Date().toISOString().split('T')[0];
-
     if (savedData) {
         const parsedData = JSON.parse(savedData);
     
         // Проверяем, совпадает ли дата в сохранённых данных с сегодняшней датой
         if (parsedData.date === today) {
           allCurrency = parsedData.rates;
-          console.log(allCurrency);
+          
           return; 
         }
       }
@@ -95,6 +94,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if (priceInput) {
         priceInput.addEventListener('change', (event) => {
             event.target.value = event.target.value.toUpperCase();
+            if(!(event.target.value in allCurrency)){
+                return; 
+            }
             changeCurrency(event.target.value);
         });
     } 
@@ -111,10 +113,11 @@ function changeCurrency(currency){
 }
 
 window.onload = function() {
+    getDataFromCurrencyAPI();
     const savedFilter = localStorage.getItem('selectedRestaurant');
     if (savedFilter) {
         document.getElementById('resSel').value = savedFilter;
         filterRestaurant(document.getElementById('resSel'));
     }
-    getDataFromCurrencyAPI();
+   
 };

@@ -53,13 +53,13 @@
                   </div>
               </header>
           </nav>
-<div style="height: 150px;">as we die both you and I</div>
+<div style="height: 150px;" class = "mt-5 mt-md-0">as we die both you and I</div>
         
     <div>
-        <button class="btn btn-primary ms-5" type="button" onclick="appear('tryToGuessForm')">Win Discount</button>
+        <button class="animated-button btn btn-primary ms-5" type="button" onclick="appear('tryToGuessForm'), anima()">Win Discount</button>
         <form style="display: none; margin-left: 48px;" id = "tryToGuessForm">
             <input type = "text" id = "gameInput" name = "gameInput" placeholder="Guess number between 1 and 3">
-            <button class="btn btn-primary" type="button" onclick="guessNumber()">Guess</button>
+            <button class="animated-button btn-primary" type="button" onclick="guessNumber(), anima()">Guess</button>
         </form>
     </div>
 
@@ -78,10 +78,10 @@
                         <th>Price <input type="text" id="priceInput" class="form-control" style="width: 70%; margin-left: 20%;"></th>
                         <th><h2 style="margin-left: 80px;">Restaurant</h2> 
                             <select id = "resSel" style="float: right;" onchange = "filterRestaurant(this)">
+                                <option value="All">All</option>
                                 <option value="Shaurma Food">SF</option>
                                 <option value="Bahandi">Bahandi</option>
-                                <option value="Zhekas">Zhekas</option>
-                                <option value="All">All</option>
+                                <option value="Zhekas">Zhekas</option>                                
                             </select>   </th>
                         <th>Choose</th>
                     </tr>
@@ -129,7 +129,7 @@
             
             <br>
             <label for = "comments" class="comicFont" style="margin-left: 15%;"> Comments to the order    <input type="text" id = "comments" style="margin-left: 10px;"> 
-                <input type="submit" value="Order">
+                <input type="submit" class = "animated-button" onclick="anima()" value="Order ">
             </form>
         </section>
     </div>

@@ -166,7 +166,7 @@ thead {
 
 
 /* For desktop/tablet screens, set table headers' alignment and font size */
-@media (min-width: 769px) {
+@media (min-width: 1001px) {
     thead {
         font-size: 18px;  /* Larger font size for desktop */
     }
@@ -174,10 +174,13 @@ thead {
     thead th {
         padding: 12px;  /* Increased padding for desktop */
     }
+    #zhekas-section-container{
+        display: flex;
+    }
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .table {
         margin-left: 0%;
         width: 100%;
@@ -247,6 +250,17 @@ thead {
     .metalFont{
         font-size: 20px;
     }
+    #sf-logo{
+        width: 100px;
+        height: 120px;
+    }
+    #img-sf{
+        width: 400px;
+        height: 340px;
+    }
+    #zhekas-section-container{
+        display: inline-block;
+    }
 }
 
 input[type=submit]{
@@ -289,3 +303,25 @@ input[type=text] {
     cursor: pointer;
   }
 
+
+.animated-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: transform 0.1s ease, background-color 0.1s ease;
+    background-color: #007bff; /* Синий фон по умолчанию */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.animated-button.pressed {
+    animation: popEffect 0.2s ease-in-out both;
+    background-color: #ff4757; /* Цвет нажатия */
+    color: #ffffff;
+}
+
+  @keyframes popEffect {
+    0% { transform: scale(1); background-color: #007bff; }
+    50% { transform: scale(1.2); background-color: #ff6b81; } /* Увеличение и смена цвета */
+    100% { transform: scale(1); background-color: #ff4757; }
+}

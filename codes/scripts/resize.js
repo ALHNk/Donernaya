@@ -6,10 +6,10 @@ window.addEventListener("load", function(){
 
     if (window.innerWidth < 1200) {
                                         // Set image si ze for mobile
-        houseImg.setAttribute("width", "100px"); // Fixed desktop size
-        houseImg.setAttribute("height", "75px");
-        menuImg.setAttribute("width", "100px");
-        menuImg.setAttribute("height", "75px");
+        houseImg.setAttribute("width", "400px"); // Fixed desktop size
+        houseImg.setAttribute("height", "300px");
+        menuImg.setAttribute("width", "400px");
+        menuImg.setAttribute("height", "300px");
     } else {
       // Set image size for desktop
       houseImg.setAttribute("width", "700");  

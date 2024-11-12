@@ -11,9 +11,11 @@ function mode(){
     var element = document.body;
     element.classList.toggle("dark-mode"); 
     if(element.classList.contains("dark-mode")){
+      document.getElementById("mode_btn").querySelector("img").setAttribute("src", "images/light_mode.png");
       localStorage.setItem("mode", "dark"); // storing locally changed values of the theme if it is dark
     }   
     else {
+      document.getElementById("mode_btn").querySelector("img").setAttribute("src", "images/dark_mode.png");
       localStorage.setItem("mode", "light"); // storing locally changed values of the theme if it is light
     }
     //if body of our page has cjildren elements such as DIVs, we will change children's background colour to different colour than body's
@@ -23,6 +25,22 @@ function mode(){
         });
     }    
 }
+
+function anima(){
+  const button = document.querySelector(".animated-button");    
+  button.classList.add("pressed");
+    
+    // Удаление класса после завершения анимации
+    setTimeout(() => {
+      button.style.backgroundColor = "#A155B9";
+      button.classList.remove("pressed");
+  }, 1500);
+}
+
+
+// button.addEventListener("click", () => {
+    
+// });
 
 
 //Event Listener for keys from keyboard
@@ -84,7 +102,7 @@ function updateDateTime() {
       const distance = targetDate - now;
 
       if (distance < 0) {
-        document.getElementById('countdown').textContent = "it was a joke we don't have another discounts";
+        document.getElementById('countdown').textContent = "NOOOOOOOW!!!!!";
         clearInterval(intervalId);
         return;
       }

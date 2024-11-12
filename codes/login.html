@@ -10,6 +10,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 
     <link rel="stylesheet" href="fails.css">
     <script src="scripts/login.js"></script>
+    <script src="scripts/general.js"></script>
 </head>
 
 <body class="bodyBack">
@@ -60,11 +61,11 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
             <form id="loginForm" onsubmit="return loginFunction()">
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
-                    <label for="emailInput">Email address</label>
+                    <label for="emailInput"><p style="color: black;">Email address</p></label>
                 </div>
                 <div class="form-floating">
                     <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
-                    <label for="passwordInput">Password</label>
+                    <label for="passwordInput"><p style="color: black;">Password</p></label>
                 </div>
                 <button type="submit" style="background: none; border: none; padding: 0; font-size: 25px;">
                     <span style="color: blue; text-decoration: underline;">Enter</span>
