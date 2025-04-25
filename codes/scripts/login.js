@@ -6,7 +6,6 @@ function loginFunction() {
   
     if (emailInput.value === storedEmail) {
       if (passwordInput.value === storedPassword) {
-        alert("Login successful!");
         localStorage.setItem('userInfo', JSON.stringify({ email: emailInput.value, password: 'HAHA, mechtai mechtai >:))', username: localStorage.getItem('firstName') }));
 
         window.location.href = "index.html";
